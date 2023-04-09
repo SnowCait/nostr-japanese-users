@@ -9,6 +9,8 @@ on:
       - main
     paths:
       - .github/workflows/run.yml
+      - main.js
+      - package*.json
 
 jobs:
   run:
