@@ -1,4 +1,9 @@
-import { SimplePool } from "nostr-tools";
+import { SimplePool, getPublicKey, nip19 } from 'nostr-tools';
+
+/** @type {string} */
+const privateKey = process.env.NOSTR_PRIVATE_KEY;
+const seckey = privateKey.startsWith('nsec') ? nip19.decode(privateKey).data : privateKey;
+const pubkey = getPublicKey(seckey);
 
 const relays = [
     'wss://relay.nostr.band',
