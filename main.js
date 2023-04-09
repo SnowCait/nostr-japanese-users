@@ -4,6 +4,7 @@ import { SimplePool, getPublicKey, nip19 } from 'nostr-tools';
 const privateKey = process.env.NOSTR_PRIVATE_KEY;
 const seckey = privateKey.startsWith('nsec') ? nip19.decode(privateKey).data : privateKey;
 const pubkey = getPublicKey(seckey);
+console.log('[pubkey]', pubkey);
 
 const relays = [
     'wss://relay.nostr.band',
@@ -22,11 +23,11 @@ const contactListEvents = await pool.list(relays, [
   }
 ]);
 contactListEvents.sort((x, y) => x.created_at - y.created_at);
-console.log(contactListEvents);
+console.log('[contact list]', contactListEvents);
 
-const events = await pool.list(relays, [
+const metadataEvents = await pool.list(relays, [
     {
         kinds: [0]
     }
 ]);
-console.log(events);
+console.log('[metadata]', metadataEvents);
