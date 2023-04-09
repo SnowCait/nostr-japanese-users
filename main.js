@@ -9,6 +9,16 @@ const relays = [
 ];
 
 const pool = new SimplePool({ eoseSubTimeout: 10000 });
+
+const contactListEvents = await pool.list(relays, [
+  {
+      kinds: [3],
+      authors: [pubkey]
+  }
+]);
+contactListEvents.sort((x, y) => x.created_at - y.created_at);
+console.log(contactListEvents);
+
 const events = await pool.list(relays, [
     {
         kinds: [0]
