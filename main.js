@@ -1,7 +1,5 @@
 import { SimplePool } from "nostr-tools";
 
-run();
-
 const relays = [
     'wss://relay.nostr.band',
     'wss://relay.damus.io',
@@ -19,3 +17,5 @@ async function run() {
     ]);
     console.log(events);
 }
+
+run();
