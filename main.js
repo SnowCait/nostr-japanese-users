@@ -8,7 +8,7 @@ const relays = [
     'wss://relay.nostr.wirednet.jp',
 ];
 
-const pool = new SimplePool();
+const pool = new SimplePool({ eoseSubTimeout: 10000 });
 const events = await pool.list(relays, [
     {
         kinds: [0]
