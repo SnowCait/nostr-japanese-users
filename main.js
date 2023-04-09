@@ -8,14 +8,10 @@ const relays = [
     'wss://relay.nostr.wirednet.jp',
 ];
 
-async function run() {
-    const pool = new SimplePool();
-    const events = await pool.list(relays, [
-        {
-            kinds: [0]
-        }
-    ]);
-    console.log(events);
-}
-
-run();
+const pool = new SimplePool();
+const events = await pool.list(relays, [
+    {
+        kinds: [0]
+    }
+]);
+console.log(events);
