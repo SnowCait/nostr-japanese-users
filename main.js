@@ -1,3 +1,4 @@
+import 'websocket-polyfill';
 import { SimplePool, getPublicKey, nip19 } from 'nostr-tools';
 
 /** @type {string} */
