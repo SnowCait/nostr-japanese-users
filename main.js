@@ -1,5 +1,5 @@
 import 'websocket-polyfill';
-import { SimplePool, getPublicKey, nip19 } from 'nostr-tools';
+import { SimplePool, Kind, getPublicKey, nip19 } from 'nostr-tools';
 
 /** @type {string} */
 const privateKey = process.env.NOSTR_PRIVATE_KEY;
@@ -8,27 +8,27 @@ const pubkey = getPublicKey(seckey);
 console.log('[pubkey]', pubkey);
 
 const relays = [
-    'wss://relay.nostr.band',
-    'wss://relay.damus.io',
-    'wss://nos.lol',
-    'wss://relay.snort.social',
-    'wss://relay.nostr.wirednet.jp',
+  'wss://relay.nostr.band',
+  'wss://relay.damus.io',
+  'wss://nos.lol',
+  'wss://relay.snort.social',
+  'wss://relay.nostr.wirednet.jp',
 ];
 
 const pool = new SimplePool({ eoseSubTimeout: 10000 });
 
-const contactListEvents = await pool.list(relays, [
+const contactsEvents = await pool.list(relays, [
   {
-      kinds: [3],
-      authors: [pubkey]
+    kinds: [Kind.Contacts],
+    authors: [pubkey]
   }
 ]);
-contactListEvents.sort((x, y) => x.created_at - y.created_at);
-console.log('[contact list]', contactListEvents);
+contactsEvents.sort((x, y) => x.created_at - y.created_at);
+console.log('[contacts]', contactsEvents);
 
 const metadataEvents = await pool.list(relays, [
-    {
-        kinds: [0]
-    }
+  {
+    kinds: [Kind.Metadata]
+  }
 ]);
 console.log('[metadata]', metadataEvents);
