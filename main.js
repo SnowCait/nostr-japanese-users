@@ -15,20 +15,34 @@ const relays = [
   'wss://relay.nostr.wirednet.jp',
 ];
 
-const pool = new SimplePool({ eoseSubTimeout: 10000 });
+const contactsPool = new SimplePool();
 
-const contactsEvents = await pool.list(relays, [
+const contactsEvents = await contactsPool.list(relays, [
   {
     kinds: [Kind.Contacts],
     authors: [pubkey]
   }
 ]);
+contactsPool.close(relays);
 contactsEvents.sort((x, y) => x.created_at - y.created_at);
-console.log('[contacts]', contactsEvents);
+console.log('[contacts]', JSON.stringify(contactsEvents));
 
-const metadataEvents = await pool.list(relays, [
+const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
+const metadataEvents = await metadataPool.list(relays, [
   {
     kinds: [Kind.Metadata]
   }
 ]);
-console.log('[metadata]', metadataEvents);
+console.log('[metadata]', metadataEvents.length);
+
+const japaneseMetadataEvents = metadataEvents
+  .filter(event => /[\p{Script_Extensions=Hiragana}\p{Script_Extensions=Katakana}]/u.test(
+    event.content.replace(/[、。，．「」]/ug, '')
+  ));
+
+console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.map(x => {
+  const { display_name, name, about } = JSON.parse(x.content);
+  return `${display_name} (@${name}): ${about}`;
+}));
+
+metadataPool.close(relays);
