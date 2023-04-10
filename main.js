@@ -35,7 +35,8 @@ const contactsEvent = contactsEvents[0];
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
 const metadataEvents = await metadataPool.list(relays, [
   {
-    kinds: [Kind.Metadata]
+    kinds: [Kind.Metadata],
+    since: contactsEvent.created_at
   }
 ]);
 metadataPool.close(relays);
@@ -50,6 +51,11 @@ console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.
   const { display_name, name, about } = JSON.parse(x.content);
   return `${display_name} (@${name}): ${about}`;
 }));
+
+if (japaneseMetadataEvents.length === 0) {
+  console.log('[no users]');
+  process.exit(0);
+}
 
 const pubkeys = new Set([
   ...contactsEvent.tags.map(([,pubkey]) => pubkey),
