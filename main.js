@@ -44,7 +44,7 @@ console.log('[metadata]', metadataEvents.length);
 
 const japaneseMetadataEvents = metadataEvents
   .filter(event => /[\p{Script_Extensions=Hiragana}\p{Script_Extensions=Katakana}]/u.test(
-    event.content.replace(/[、。，．「」]/ug, '')
+    event.content.replace(/[、。，．「」《》]/ug, '')
   ));
 
 console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.map(x => {
