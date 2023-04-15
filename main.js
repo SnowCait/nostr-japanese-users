@@ -72,11 +72,12 @@ event.id = getEventHash(event);
 event.sig = signEvent(event, seckey);
 console.log('[publish]', event);
 
+const start = Date.now();
 const pub = contactsPool.publish(relays, event);
 pub.on('ok', relay => {
-  console.log('[ok]', relay);
+  console.log('[ok]', relay, `${Date.now() - start}ms`);
 });
 pub.on('failed', relay => {
-  console.log('[failed]', relay);
+  console.log('[failed]', relay, `${Date.now() - start}ms`);
 });
 setTimeout(() => contactsPool.close(relays), 3000);
