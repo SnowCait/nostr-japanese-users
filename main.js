@@ -24,15 +24,14 @@ const contactsEvents = await contactsPool.list(relays, [
     authors: [pubkey]
   }
 ]);
-contactsEvents.sort((x, y) => x.created_at - y.created_at);
-console.log('[contacts]', JSON.stringify(contactsEvents, null, 2));
+contactsEvents.sort((x, y) => y.created_at - x.created_at);
+console.log('[contacts]', contactsEvents.map(x => `${new Date(x.created_at * 1000)}: ${x.tags.length}`));
 
 if (contactsEvents.length === 0) {
   throw new Error('Contacts not found');
 }
 
 const contactsEvent = contactsEvents[0];
-console.log('[contacts]', contactsEvent.tags.length);
 
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
 const metadataEvents = await metadataPool.list(relays, [
