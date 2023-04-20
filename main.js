@@ -43,9 +43,12 @@ metadataPool.close(relays);
 console.log('[metadata]', metadataEvents.length);
 
 const japaneseMetadataEvents = metadataEvents
-  .filter(event => /[\p{Script_Extensions=Hiragana}\p{Script_Extensions=Katakana}]/u.test(
-    event.content.replace(/[、。，．「」《》]/ug, '')
-  ));
+  .filter(event =>
+    !event.tags.some(([tagName]) => tagName === 'mostr') &&
+    /[\p{Script_Extensions=Hiragana}\p{Script_Extensions=Katakana}]/u.test(
+      event.content.replace(/[、。，．「」《》]/ug, '')
+    )
+  );
 
 console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.map(x => {
   const { display_name, name, about } = JSON.parse(x.content);
