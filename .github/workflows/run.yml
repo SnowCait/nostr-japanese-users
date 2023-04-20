@@ -26,8 +26,9 @@ jobs:
           NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
       - uses: snow-actions/git-config-user@v1.0.0
       - run: |
+          set -x
           git add docs/
-          if ! git diff --exit-code --quiet; then
+          if ! git diff --exit-code; then
             git commit -m 'Update contacts.json'
             git push
           fi
