@@ -1,4 +1,5 @@
 import 'websocket-polyfill';
+import * as fs from 'fs/promises';
 import { SimplePool, Kind, getPublicKey, nip19, getEventHash, signEvent } from 'nostr-tools';
 
 /** @type {string} */
@@ -31,6 +32,7 @@ if (contactsEvents.length === 0) {
 }
 
 const contactsEvent = contactsEvents[0];
+console.log('[contacts]', contactsEvent.tags.length);
 
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
 const metadataEvents = await metadataPool.list(relays, [
@@ -64,6 +66,7 @@ const pubkeys = new Set([
   ...contactsEvent.tags.map(([,pubkey]) => pubkey),
   ...japaneseMetadataEvents.map(x => x.pubkey)
 ]);
+console.log('[contacts]', pubkeys.size);
 const event = {
   kind: Kind.Contacts,
   pubkey,
@@ -73,7 +76,8 @@ const event = {
 };
 event.id = getEventHash(event);
 event.sig = signEvent(event, seckey);
-console.log('[publish]', event);
+
+await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
 
 const start = Date.now();
 const pub = contactsPool.publish(relays, event);

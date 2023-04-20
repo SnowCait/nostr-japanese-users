@@ -24,3 +24,7 @@ jobs:
       - run: node main.js
         env:
           NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
+      - uses: snow-actions/git-config-user@v1.0.0
+      - run: git add docs/
+      - run: git commit -m 'Update contacts.json'
+      - run: git push
