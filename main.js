@@ -66,6 +66,12 @@ const pubkeys = new Set([
   ...japaneseMetadataEvents.map(x => x.pubkey)
 ]);
 console.log('[contacts]', pubkeys.size);
+
+if (pubkeys.size <= contactsEvent.tags.length) {
+  console.log('[no new users]');
+  process.exit(0);
+}
+
 const event = {
   kind: Kind.Contacts,
   pubkey,
