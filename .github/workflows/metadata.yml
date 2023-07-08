@@ -23,12 +23,15 @@ jobs:
       - id: metadata
         run: echo "json=$(cat metadata.json | jq -c)" >> "$GITHUB_OUTPUT"
       - id: relays
-        run: echo "json=$(cat relays.json | jq -c)" >> "$GITHUB_OUTPUT"
+        run: |
+          echo "data<<EOF" >> "$GITHUB_OUTPUT"
+          cat relays.json | jq -c -r '.[]' >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
       - uses: snow-actions/nostr@v1.5.0
         with:
           kind: 0
           content: ${{ steps.metadata.outputs.json }}
-          relays: ${{ steps.relays.outputs.json }}
+          relays: ${{ steps.relays.outputs.data }}
           private-key: ${{ secrets.NOSTR_PRIVATE_KEY }}
         id: publish
       - run: echo "$event" | jq > docs/metadata.json
