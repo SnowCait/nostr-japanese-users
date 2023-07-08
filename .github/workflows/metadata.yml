@@ -1,0 +1,44 @@
+name: Metadata
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/metadata.yml
+      - metadata.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: node -v
+      - run: npm -v
+      - uses: actions/checkout@v3
+      - id: metadata
+        run: echo "json=$(cat metadata.json | jq -c)" >> "$GITHUB_OUTPUT"
+      - id: relays
+        run: echo "json=$(cat relays.json | jq -c)" >> "$GITHUB_OUTPUT"
+      - uses: snow-actions/nostr@v1.5.0
+        with:
+          kind: 0
+          content: ${{ steps.metadata.outputs.json }}
+          relays: ${{ steps.relays.outputs.json }}
+          private-key: ${{ secrets.NOSTR_PRIVATE_KEY }}
+        id: publish
+      - run: echo "$event" | jq > docs/metadata.json
+        env:
+          event: ${{ steps.publish.outputs.event }}
+      - uses: snow-actions/git-config-user@v1.0.0
+      - run: |
+          set -x
+          if ! git diff --exit-code docs/; then
+            git add docs/
+            git commit -m 'Update metadata.json'
+            git push
+          fi
