@@ -31,7 +31,7 @@ jobs:
         with:
           kind: 0
           content: ${{ steps.metadata.outputs.json }}
-          relays: ${{ steps.relays.outputs.json }}
+          relays: ${{ steps.relays.outputs.data }}
           private-key: ${{ secrets.NOSTR_PRIVATE_KEY }}
         id: publish
       - run: echo "$event" | jq > docs/metadata.json
