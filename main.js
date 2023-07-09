@@ -1,6 +1,8 @@
 import 'websocket-polyfill';
 import * as fs from 'fs/promises';
 import { SimplePool, Kind, getPublicKey, nip19, getEventHash, signEvent } from 'nostr-tools';
+import dotenv from 'dotenv';
+dotenv.config();
 
 /** @type {string} */
 const privateKey = process.env.NOSTR_PRIVATE_KEY;
