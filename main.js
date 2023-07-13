@@ -1,6 +1,8 @@
 import 'websocket-polyfill';
 import * as fs from 'fs/promises';
 import { SimplePool, Kind, getPublicKey, nip19, getEventHash, signEvent } from 'nostr-tools';
+import relays from './relays.json' assert { type: 'json' };
+import readonlyRelays from './relays.readonly.json' assert { type: 'json' };
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -10,13 +12,7 @@ const seckey = privateKey.startsWith('nsec') ? nip19.decode(privateKey).data : p
 const pubkey = getPublicKey(seckey);
 console.log('[pubkey]', pubkey);
 
-const relays = [
-  'wss://relay.nostr.band',
-  'wss://relay.damus.io',
-  'wss://nos.lol',
-  'wss://relay.snort.social',
-  'wss://relay.nostr.wirednet.jp',
-];
+const readRelays = [...relays, readonlyRelays];
 
 const contactsPool = new SimplePool();
 
@@ -36,13 +32,13 @@ if (contactsEvents.length === 0) {
 const contactsEvent = contactsEvents[0];
 
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
-const metadataEvents = await metadataPool.list(relays, [
+const metadataEvents = await metadataPool.list(readRelays, [
   {
     kinds: [Kind.Metadata],
     since: contactsEvent.created_at
   }
 ]);
-metadataPool.close(relays);
+metadataPool.close(readRelays);
 console.log('[metadata]', metadataEvents.length);
 
 const japaneseMetadataEvents = metadataEvents
