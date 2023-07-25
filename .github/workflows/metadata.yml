@@ -43,3 +43,8 @@ jobs:
           git add docs/
           git commit -m 'Update metadata.json'
           git push
+      - run: |
+          curl -X POST -u "${auth}" -H "Content-Type: application/json" -d "$event" https://nostr-webhook.compile-error.net/post
+        env:
+          event: ${{ steps.publish.outputs.event }}
+          auth: ${{ secrets.NOSTR_WEBHOOK_BASIC_AUTH }}
