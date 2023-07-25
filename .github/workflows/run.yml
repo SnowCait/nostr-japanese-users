@@ -27,7 +27,6 @@ jobs:
       - run: node main.js
         env:
           NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
-          NOSTR_WEBHOOK_BASIC_AUTH: ${{ secrets.NOSTR_WEBHOOK_BASIC_AUTH }}
       - uses: snow-actions/git-config-user@v1.0.0
       - run: |
           set -x
@@ -36,3 +35,7 @@ jobs:
             git commit -m 'Update contacts.json'
             git push
           fi
+      - run: |
+          curl -X POST -u "${NOSTR_WEBHOOK_BASIC_AUTH}" -H "Content-Type: application/json" -d @docs/contacts.json https://nostr-webhook.compile-error.net/post
+        env:
+          NOSTR_WEBHOOK_BASIC_AUTH: ${{ secrets.NOSTR_WEBHOOK_BASIC_AUTH }}
