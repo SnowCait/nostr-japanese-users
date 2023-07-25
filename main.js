@@ -91,3 +91,13 @@ pub.on('failed', relay => {
   console.log('[failed]', relay, `${Date.now() - start}ms`);
 });
 setTimeout(() => contactsPool.close(relays), 3000);
+
+const response = await fetch('https://nostr-webhook.compile-error.net/post', {
+  method: 'POST',
+  headers: {
+    Authorization: `Basic ${btoa(process.env.NOSTR_WEBHOOK_BASIC_AUTH)}`
+  },
+  body: JSON.stringify(event)
+});
+
+console.log('[nostr-webhook]', response.ok, await response.text());
