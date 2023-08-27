@@ -1,6 +1,6 @@
 import 'websocket-polyfill';
 import * as fs from 'fs/promises';
-import { SimplePool, getPublicKey, nip19, getEventHash } from 'nostr-tools';
+import { SimplePool, getPublicKey, nip19, finishEvent } from 'nostr-tools';
 import relays from './relays.json' assert { type: 'json' };
 import readonlyRelays from './relays.readonly.json' assert { type: 'json' };
 import dotenv from 'dotenv';
@@ -70,15 +70,12 @@ if (pubkeys.size <= contactsEvent.tags.length) {
   process.exit(0);
 }
 
-const event = {
+const event = finishEvent({
   kind: 3,
-  pubkey,
   created_at: Math.floor(Date.now() / 1000),
   tags: Array.from(pubkeys).map(pubkey => ['p', pubkey]),
   content: contactsEvent.content
-};
-event.id = getEventHash(event);
-event.sig = getSignature(event, seckey);
+}, seckey);
 
 await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
 
