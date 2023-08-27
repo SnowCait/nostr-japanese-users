@@ -1,6 +1,6 @@
 import 'websocket-polyfill';
 import * as fs from 'fs/promises';
-import { SimplePool, Kind, getPublicKey, nip19, getEventHash, signEvent } from 'nostr-tools';
+import { SimplePool, getPublicKey, nip19, getEventHash } from 'nostr-tools';
 import relays from './relays.json' assert { type: 'json' };
 import readonlyRelays from './relays.readonly.json' assert { type: 'json' };
 import dotenv from 'dotenv';
@@ -18,7 +18,7 @@ const contactsPool = new SimplePool();
 
 const contactsEvents = await contactsPool.list(relays, [
   {
-    kinds: [Kind.Contacts],
+    kinds: [3],
     authors: [pubkey]
   }
 ]);
@@ -34,7 +34,7 @@ const contactsEvent = contactsEvents[0];
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
 const metadataEvents = await metadataPool.list(readRelays, [
   {
-    kinds: [Kind.Metadata],
+    kinds: [0],
     since: contactsEvent.created_at
   }
 ]);
@@ -71,14 +71,14 @@ if (pubkeys.size <= contactsEvent.tags.length) {
 }
 
 const event = {
-  kind: Kind.Contacts,
+  kind: 3,
   pubkey,
   created_at: Math.floor(Date.now() / 1000),
   tags: Array.from(pubkeys).map(pubkey => ['p', pubkey]),
   content: contactsEvent.content
 };
 event.id = getEventHash(event);
-event.sig = signEvent(event, seckey);
+event.sig = getSignature(event, seckey);
 
 await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
 
