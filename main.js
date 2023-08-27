@@ -79,12 +79,6 @@ const event = finishEvent({
 
 await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
 
-const start = Date.now();
-const pub = contactsPool.publish(relays, event);
-pub.on('ok', relay => {
-  console.log('[ok]', relay, `${Date.now() - start}ms`);
-});
-pub.on('failed', relay => {
-  console.log('[failed]', relay, `${Date.now() - start}ms`);
-});
-setTimeout(() => contactsPool.close(relays), 3000);
+// Cannot log anything
+await Promise.allSettled(contactsPool.publish(relays, event));
+contactsPool.close(relays);
