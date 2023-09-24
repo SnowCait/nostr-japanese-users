@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1695582542,
+  "created_at": 1695586284,
   "tags": [
     [
       "p",
@@ -28685,6 +28685,10 @@
     ],
     [
       "p",
+      "de5d70fad1e7e3777d037271d726d660c159fc01d566deaa51012dd3aa42f368"
+    ],
+    [
+      "p",
       "d1ff33d16edf15cdd4c3c8d4e647ed3bc62e63ad4a3dc1bff55d32f929d98003"
     ],
     [
@@ -28693,15 +28697,11 @@
     ],
     [
       "p",
-      "e7489a59fc42b77fc0642ce4ab63e7af649a3f96342bc006be87e543fd6f54b9"
-    ],
-    [
-      "p",
-      "de5d70fad1e7e3777d037271d726d660c159fc01d566deaa51012dd3aa42f368"
-    ],
-    [
-      "p",
       "65ce4a6651655ff2bdb9893eb487a0dcba7ab669e62b37238530c200ec5342c7"
+    ],
+    [
+      "p",
+      "e7489a59fc42b77fc0642ce4ab63e7af649a3f96342bc006be87e543fd6f54b9"
     ],
     [
       "p",
@@ -28725,11 +28725,11 @@
     ],
     [
       "p",
-      "6c9ba03aebd182e137962b1dd8cdef046efe7e5cde53103873f0e3e626aa7d0e"
+      "59698d4987ddddda54786225f1ba45a751d2149ac28b058dde91589159948242"
     ],
     [
       "p",
-      "59698d4987ddddda54786225f1ba45a751d2149ac28b058dde91589159948242"
+      "6c9ba03aebd182e137962b1dd8cdef046efe7e5cde53103873f0e3e626aa7d0e"
     ],
     [
       "p",
@@ -28753,11 +28753,11 @@
     ],
     [
       "p",
-      "1ae72f700e27c7507286f29413f105562794fe9fd1c707f1e8b75b34e6bc0b97"
+      "1631c959877348ad6a8e5ef0e816c189d87505bd1c52967e6921310cf856337f"
     ],
     [
       "p",
-      "1631c959877348ad6a8e5ef0e816c189d87505bd1c52967e6921310cf856337f"
+      "1ae72f700e27c7507286f29413f105562794fe9fd1c707f1e8b75b34e6bc0b97"
     ],
     [
       "p",
@@ -28765,11 +28765,11 @@
     ],
     [
       "p",
-      "4c9ea9f84b13fe757c0271a6067d8d0c4ee5eec96c85171319d2f831309bb877"
+      "857aacd9bc6e8f8639a4905cbbc25f64289e6b8bb3e0be6ae6ec15f238858631"
     ],
     [
       "p",
-      "857aacd9bc6e8f8639a4905cbbc25f64289e6b8bb3e0be6ae6ec15f238858631"
+      "4c9ea9f84b13fe757c0271a6067d8d0c4ee5eec96c85171319d2f831309bb877"
     ],
     [
       "p",
@@ -28793,19 +28793,7 @@
     ],
     [
       "p",
-      "b13d3fb0f7b95c6dc3414884c2a2fe8b984454dee77570999ac1eb847d8274b9"
-    ],
-    [
-      "p",
-      "a5d4ab850cd06a2801cc273d447e057e2b24daab4ca8f9057015dc667a6d2466"
-    ],
-    [
-      "p",
       "88138688b7a917d95c82b529df9f1ca3da2d51ce60d53506b0fa57305d6cd4d7"
-    ],
-    [
-      "p",
-      "a820955de60a9612a22a3f087defad7c8abc6d8ca06abeadeef7bd83e1bdc9bf"
     ],
     [
       "p",
@@ -28817,11 +28805,23 @@
     ],
     [
       "p",
-      "54d41502fe18c16c9d99f8b1d0ff1fbfbf5878aefbe82599ca7e852e19e8ff16"
+      "9269cf3e0576af3023a9f9c78cee1f42e1f44b4368cd11a017720ac12b0a8b34"
     ],
     [
       "p",
-      "9269cf3e0576af3023a9f9c78cee1f42e1f44b4368cd11a017720ac12b0a8b34"
+      "b13d3fb0f7b95c6dc3414884c2a2fe8b984454dee77570999ac1eb847d8274b9"
+    ],
+    [
+      "p",
+      "a5d4ab850cd06a2801cc273d447e057e2b24daab4ca8f9057015dc667a6d2466"
+    ],
+    [
+      "p",
+      "a820955de60a9612a22a3f087defad7c8abc6d8ca06abeadeef7bd83e1bdc9bf"
+    ],
+    [
+      "p",
+      "54d41502fe18c16c9d99f8b1d0ff1fbfbf5878aefbe82599ca7e852e19e8ff16"
     ],
     [
       "p",
@@ -28873,6 +28873,6 @@
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "3feb85d604497f06865cdcbe92908f6b86caa6ae8b7dc06197441d8e5ba64b5a",
-  "sig": "a27b6a5163b1a0d712d8688bca29e23c95d474b3dbd737ead9b4d029c596d826ba1e73f218f0fa4c9062877dd906325679ecf80d26dfc21e4eb117c572fe2294"
+  "id": "05a109fbb7ee520149992b64c1d54a2936b6493d45fe4a945eb08056c17a0479",
+  "sig": "173ce850278f96f0becc38b4832e9a2596e9863da23143705900d4a35c93b257f7f6fbd0c9fe3afe7caf8763027d56ca4b15d9249688406075187fda32878250"
 }
