@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1695606560,
+  "created_at": 1695608387,
   "tags": [
     [
       "p",
@@ -28753,10 +28753,6 @@
     ],
     [
       "p",
-      "59698d4987ddddda54786225f1ba45a751d2149ac28b058dde91589159948242"
-    ],
-    [
-      "p",
       "4c9ea9f84b13fe757c0271a6067d8d0c4ee5eec96c85171319d2f831309bb877"
     ],
     [
@@ -28773,15 +28769,11 @@
     ],
     [
       "p",
-      "c648c8dd970c432a9c65921c58fac54f6aea5a5ddd0d088c4287e385b0428363"
-    ],
-    [
-      "p",
       "cae21d67a08f74b5036cb89e88eda7c7bab9da533f14bf2aa5fbdd4b27ff9509"
     ],
     [
       "p",
-      "1631c959877348ad6a8e5ef0e816c189d87505bd1c52967e6921310cf856337f"
+      "59698d4987ddddda54786225f1ba45a751d2149ac28b058dde91589159948242"
     ],
     [
       "p",
@@ -28789,7 +28781,15 @@
     ],
     [
       "p",
+      "c648c8dd970c432a9c65921c58fac54f6aea5a5ddd0d088c4287e385b0428363"
+    ],
+    [
+      "p",
       "a5d4ab850cd06a2801cc273d447e057e2b24daab4ca8f9057015dc667a6d2466"
+    ],
+    [
+      "p",
+      "1631c959877348ad6a8e5ef0e816c189d87505bd1c52967e6921310cf856337f"
     ],
     [
       "p",
@@ -28861,6 +28861,6 @@
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "44c28c759907ad91b414c50f39b3a9b9269951b9ec77a3d7421e347939126f85",
-  "sig": "4f0628795d1655ec0a8c50d881464ed3a37b671a4ed06768354cd2907febcabf5258ecbe2fb53634b75c6072a3fbce15fe4504772949ce647e2993919cfc3e3f"
+  "id": "221316756c4498fd7aecd6250549e5354d8b51f104b73c961530a0fcc0b5c39c",
+  "sig": "f55adc7163ddbc5f30506ec66d880269ce6b4bb7fd3bce51e8ea124c05fb97bc4786266d3b6fd96148271a6b729543e447cb8f2cf3cadf28c360fb2dccbb6760"
 }
