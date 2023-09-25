@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1695654771,
+  "created_at": 1695658529,
   "tags": [
     [
       "p",
@@ -28721,6 +28721,10 @@
     ],
     [
       "p",
+      "a1c6e9267f73c9571c86edc633e78a5a239ab02004b5f0ad5e666f586f07303f"
+    ],
+    [
+      "p",
       "69c602f3fd7f595d9ef438ad906c3bd2f95434c9de5a054cea6b722a3a05c7e3"
     ],
     [
@@ -28730,10 +28734,6 @@
     [
       "p",
       "7e38e45aad9adb4a6d2b9e42e0605b53baac1c25ef64c6d9213dc4363bb810c3"
-    ],
-    [
-      "p",
-      "a1c6e9267f73c9571c86edc633e78a5a239ab02004b5f0ad5e666f586f07303f"
     ],
     [
       "p",
@@ -28753,11 +28753,11 @@
     ],
     [
       "p",
-      "35011df5b04e32f5bf4cb1c0856f59ddf84aafff12fe9b8cdc3cf2c2f625c40d"
+      "17a55f0c92b0f41caf2c3142d8e74c33b435c98c981da216b381c9462249fc86"
     ],
     [
       "p",
-      "17a55f0c92b0f41caf2c3142d8e74c33b435c98c981da216b381c9462249fc86"
+      "35011df5b04e32f5bf4cb1c0856f59ddf84aafff12fe9b8cdc3cf2c2f625c40d"
     ],
     [
       "p",
@@ -28781,10 +28781,6 @@
     ],
     [
       "p",
-      "857aacd9bc6e8f8639a4905cbbc25f64289e6b8bb3e0be6ae6ec15f238858631"
-    ],
-    [
-      "p",
       "47043430accc00186c497fc1cae8def4b045fee0f5269e068498ab9caec081e7"
     ],
     [
@@ -28794,6 +28790,10 @@
     [
       "p",
       "b13d3fb0f7b95c6dc3414884c2a2fe8b984454dee77570999ac1eb847d8274b9"
+    ],
+    [
+      "p",
+      "857aacd9bc6e8f8639a4905cbbc25f64289e6b8bb3e0be6ae6ec15f238858631"
     ],
     [
       "p",
@@ -28845,6 +28845,6 @@
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "74bffc05692f1569df458312e566af7a89b8c6eb920d5b748c1a96eb6f98b871",
-  "sig": "9bb2146be1c530dec1da6749f6117e1b97ef00bcb2e023098f2f0ad2fd7c7819152617f768afc62d402e43be216dc5f3c16c0610c0f9a090a5787370c939e45e"
+  "id": "6615329239cabb9c32829ccdbfc11432488c808b5fe83b7af14a7f476fd7f21a",
+  "sig": "d7f28e41b0bc446d2179606c103085cb4fd8297c2fe56d86f6e794292b01b7eaff0401a30667a0e96adfcd74d7ba8366a9c1ae39226bee880e7dd00cd31e62cf"
 }
