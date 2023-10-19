@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1697713831,
+  "created_at": 1697718182,
   "tags": [
     [
       "p",
@@ -28669,6 +28669,10 @@
     ],
     [
       "p",
+      "6bc08a88c4cc5abeb2290b41e5590c728704d589c774525ed48ed4b6201d6098"
+    ],
+    [
+      "p",
       "34ed99358a629efbc14c0715f4744faef02d3ab02c957505e32d2b041689ff67"
     ],
     [
@@ -28685,6 +28689,10 @@
     ],
     [
       "p",
+      "606e001d6243c43b7758e86431d32e9b06aad4f2ad5bea9e4637d6f699811de0"
+    ],
+    [
+      "p",
       "d861cdc8ad152c5ef7a056b57d8d6f52f317050025f13556c058a99f2bf762da"
     ],
     [
@@ -28693,7 +28701,7 @@
     ],
     [
       "p",
-      "606e001d6243c43b7758e86431d32e9b06aad4f2ad5bea9e4637d6f699811de0"
+      "8cb1d5e90dbf149706bbc482dbc268e039f5b00ac40713a737c8257e3d9fb0b1"
     ],
     [
       "p",
@@ -28705,19 +28713,11 @@
     ],
     [
       "p",
-      "01605bcd1ba2d6dc9197a76098d6b8c5e99cffdc6cab00325eb67b3628345b1a"
-    ],
-    [
-      "p",
-      "8cb1d5e90dbf149706bbc482dbc268e039f5b00ac40713a737c8257e3d9fb0b1"
-    ],
-    [
-      "p",
       "56e61f61c7b7cda36c1730835d370fb79001273c6ec2bc93f6f86b1e1a2fc8f3"
     ],
     [
       "p",
-      "cd027c2b3e8905882e86eef465310fd95d1e4df66f4376ab4dc52d0562711af1"
+      "01605bcd1ba2d6dc9197a76098d6b8c5e99cffdc6cab00325eb67b3628345b1a"
     ],
     [
       "p",
@@ -28794,10 +28794,6 @@
     [
       "p",
       "9e1815dfc010252a17078f9005336bbc047f551d6d7b64545052bceddecb8a2a"
-    ],
-    [
-      "p",
-      "87b8b60cd4da24969c25621181bd3463b1c5b453d0c14d3864f58a39b36f2ada"
     ],
     [
       "p",
@@ -28905,6 +28901,6 @@
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "91ec1f0ada112f3fc916c707cef764d63f5df082d4360b9ea57988fb919ef847",
-  "sig": "615112a1c8424881a7a19a05b28677e7492d010cf41d18427d925b315e23a79676d17b49ac534789ce7a19115a05cfc035372abce5c810ebf7bca34995319385"
+  "id": "652e1b3a2c54062e8ec35446a7a79bcc369cfb053f2cb0e2d908ec042f43f07c",
+  "sig": "8ba0900e95387c0a50624d279e9e1a4e278ba3c8bfd14d790ab2f2ebcfcc7ddec93649c0692a301b68a9fb983c86fc4257774abcc0b7c0f3ac96e0523c16d6bc"
 }
