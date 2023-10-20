@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1697782562,
+  "created_at": 1697785869,
   "tags": [
     [
       "p",
@@ -28685,15 +28685,15 @@
     ],
     [
       "p",
+      "8cb1d5e90dbf149706bbc482dbc268e039f5b00ac40713a737c8257e3d9fb0b1"
+    ],
+    [
+      "p",
       "64b07e518ab0d146f82bc60f9baff8c744552c3838fa6592fc36b38e944f5c6f"
     ],
     [
       "p",
       "cd70588e162f568994eae7fbcf79de3271bc067d48b328941b4abe0007311402"
-    ],
-    [
-      "p",
-      "8cb1d5e90dbf149706bbc482dbc268e039f5b00ac40713a737c8257e3d9fb0b1"
     ],
     [
       "p",
@@ -28762,117 +28762,9 @@
     [
       "p",
       "2af4937993efc3433c73444c39879ce59dd5ffb8e23f7026d1ead8505b3c5473"
-    ],
-    [
-      "p",
-      "cb6574ca24993eead1c84f3c4b0a92cf8e6f2f1f5336bd260e6682bb29b5f32a"
-    ],
-    [
-      "p",
-      "8bf3be209cbd89e9404f3894c4769eee3e23c98a1f74471ebb63e214d2eb693d"
-    ],
-    [
-      "p",
-      "8fd019571807fc17c461f8dc8df669699b63c59c01e7af2cd5ec8b21a0e01a4f"
-    ],
-    [
-      "p",
-      "05aacdd0094ca01a271b8f95ef9e83cb735fd70c879d26e798634a0906bf24d6"
-    ],
-    [
-      "p",
-      "beace06768f3ade8db794ba5f7a8c99aca368504464e2e97e2974bc596c82cdf"
-    ],
-    [
-      "p",
-      "c8d1757d5337d652465ef94b25048241ccd847c87dc7c0f09c3f9acec3cb3f0e"
-    ],
-    [
-      "p",
-      "e7489a59fc42b77fc0642ce4ab63e7af649a3f96342bc006be87e543fd6f54b9"
-    ],
-    [
-      "p",
-      "03e7e3dd15e5786954122a412b4d7aa8605bc00411c2c325f638369d4d7c2c6e"
-    ],
-    [
-      "p",
-      "c5efb4ad500373e712f8c032cd061d7d3768b16758c1ac77f19c684f2d18a202"
-    ],
-    [
-      "p",
-      "3c25bec76958c6198e58830836580581ae7d1148f44520527b28260d39851ab0"
-    ],
-    [
-      "p",
-      "a1c6e9267f73c9571c86edc633e78a5a239ab02004b5f0ad5e666f586f07303f"
-    ],
-    [
-      "p",
-      "6c9ba03aebd182e137962b1dd8cdef046efe7e5cde53103873f0e3e626aa7d0e"
-    ],
-    [
-      "p",
-      "c1536063f94f2cff03bbcce3d88c2215dd6578f27b1a25e29f4f701f4638f418"
-    ],
-    [
-      "p",
-      "ed68fe3d3fc2b3bfd2c67bc810613f7e25d8605b6aa9da327aa076e842cd9d2b"
-    ],
-    [
-      "p",
-      "1fe56787bfa8b0274a1a009c624999865dac82de27a0ac1428a4ff2b194a72a6"
-    ],
-    [
-      "p",
-      "17a55f0c92b0f41caf2c3142d8e74c33b435c98c981da216b381c9462249fc86"
-    ],
-    [
-      "p",
-      "1ae72f700e27c7507286f29413f105562794fe9fd1c707f1e8b75b34e6bc0b97"
-    ],
-    [
-      "p",
-      "f314403fa2f329ac1c04cf03d5864e6970b9a2cb5a0f600e23242a3f45aa332e"
-    ],
-    [
-      "p",
-      "4c9ea9f84b13fe757c0271a6067d8d0c4ee5eec96c85171319d2f831309bb877"
-    ],
-    [
-      "p",
-      "851ffd377d5a986c8fbdd87feba3aa33df0e0911d5f86f788e51dead61a73129"
-    ],
-    [
-      "p",
-      "57d8c3cfd75ae8f8ef5f4ac32094178cbc0746e7918b61aba38791dd7af3afd7"
-    ],
-    [
-      "p",
-      "cae21d67a08f74b5036cb89e88eda7c7bab9da533f14bf2aa5fbdd4b27ff9509"
-    ],
-    [
-      "p",
-      "b13d3fb0f7b95c6dc3414884c2a2fe8b984454dee77570999ac1eb847d8274b9"
-    ],
-    [
-      "p",
-      "a5d4ab850cd06a2801cc273d447e057e2b24daab4ca8f9057015dc667a6d2466"
-    ],
-    [
-      "p",
-      "a820955de60a9612a22a3f087defad7c8abc6d8ca06abeadeef7bd83e1bdc9bf"
-    ],
-    [
-      "p",
-      "634615d75d8ce3d4f790224effdf7ba63f41c5c7270f17e191bd7724677dc653"
-    ],
-    [
-      "p",
-      "54d41502fe18c16c9d99f8b1d0ff1fbfbf5878aefbe82599ca7e852e19e8ff16"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "6b6bcfe88f79ba6c3bc4d1d56ee9116aa6fcee3d6500b11704260aa79a4b586a",
-  "sig": "ae21b444236bec586dc8f8e3e16a6a0f979e5395152557c87d7777f12ded078c829116602838bc49c379ffb182084a3990e19056201be9fb2316bb1900aad4e3"
+  "id": "7d210630fdbb8038ddcfdd0a3eef4c789d8cf1a70f67b573e676ced2fb06c823",
+  "sig": "b118da85272e6451a4255917281f4e31a907b052815352a17d4590ec2a463212a633c52a19b7547e4855b865cc9cc42d4b7d8da896feba37518a36a38688f79e"
 }
