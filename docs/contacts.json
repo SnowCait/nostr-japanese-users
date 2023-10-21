@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1697857924,
+  "created_at": 1697861635,
   "tags": [
     [
       "p",
@@ -28669,7 +28669,15 @@
     ],
     [
       "p",
+      "3505844332ce77c713dff0db15bbd07729f898ea8ae399d8ac6a6c607b58101f"
+    ],
+    [
+      "p",
       "90753b0892199c044549b657a06ac3de591222352dff97360862c4a594e4dd96"
+    ],
+    [
+      "p",
+      "5e52a72aba4af77bbf48345c4e685b26c8014fd5de9ce6cfa2a535e0bc91c35d"
     ],
     [
       "p",
@@ -28681,19 +28689,19 @@
     ],
     [
       "p",
-      "606e001d6243c43b7758e86431d32e9b06aad4f2ad5bea9e4637d6f699811de0"
-    ],
-    [
-      "p",
       "0edfd9c2ccb1dd538160da9c7da6106aae20f949163ce268f538b7884135acb1"
     ],
     [
       "p",
-      "8cb1d5e90dbf149706bbc482dbc268e039f5b00ac40713a737c8257e3d9fb0b1"
+      "606e001d6243c43b7758e86431d32e9b06aad4f2ad5bea9e4637d6f699811de0"
     ],
     [
       "p",
       "f377f0f0f245e6ea35d46c75eee79b4a905b87ddffb8b3b7f78b8405cf4038ea"
+    ],
+    [
+      "p",
+      "8cb1d5e90dbf149706bbc482dbc268e039f5b00ac40713a737c8257e3d9fb0b1"
     ],
     [
       "p",
@@ -28730,10 +28738,6 @@
     [
       "p",
       "175d3a4fcf22b218dcded71743ca119d6fe7e813ba28f5f32614e18f79a5d72b"
-    ],
-    [
-      "p",
-      "3505844332ce77c713dff0db15bbd07729f898ea8ae399d8ac6a6c607b58101f"
     ],
     [
       "p",
@@ -28869,6 +28873,6 @@
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "3c191d11e8149304bb1063263d1db9b7e1d7dded8957eae279b4829943bc7e25",
-  "sig": "70502e53059a20425515d1e531eb114327ca0dd0eed0bcb8ad918d31ec6e762c8fb14189047bdad1cbdd5e54e2e8dfe2a6849a623d5efb643f5d8a4ebd102dc0"
+  "id": "f4a14d960ba90e9f0e6caa330ef5ed00fff267c67d5d77466108f79274b1bde4",
+  "sig": "5444a2da4bf01e9db4e192c9db4ea4b464ddeb364eb009d8c6be83c542e28373066b6211021f6d88d419a4f6f3b19bbe6acc219145c1c912b49d38ac26c45a5d"
 }
