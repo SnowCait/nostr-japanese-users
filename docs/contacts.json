@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1698037895,
+  "created_at": 1698041785,
   "tags": [
     [
       "p",
@@ -28673,7 +28673,7 @@
     ],
     [
       "p",
-      "8ac100815cd1fb9c1ba09e9378e957930af750b065561850ebbed494b9fa89e0"
+      "dc31d652a94aa23ad0643d81ee3e2ba6242f7e969a5cf9e576d7203d5aab8bc5"
     ],
     [
       "p",
@@ -28681,7 +28681,15 @@
     ],
     [
       "p",
+      "8ac100815cd1fb9c1ba09e9378e957930af750b065561850ebbed494b9fa89e0"
+    ],
+    [
+      "p",
       "606e001d6243c43b7758e86431d32e9b06aad4f2ad5bea9e4637d6f699811de0"
+    ],
+    [
+      "p",
+      "a40b0b71f1fa13eb9e3c76cf4b20765b236f223a5e3aa8c2a22016b2924210fe"
     ],
     [
       "p",
@@ -28693,7 +28701,7 @@
     ],
     [
       "p",
-      "a40b0b71f1fa13eb9e3c76cf4b20765b236f223a5e3aa8c2a22016b2924210fe"
+      "716101a12f95c11de9dad2922edafcf6655e0a984e717fae1ed66320caa507c3"
     ],
     [
       "p",
@@ -28706,10 +28714,6 @@
     [
       "p",
       "205da4a4dbeb0d3e76d04db86efd0fcc9077d8e48e5a5415872b83c082ed321c"
-    ],
-    [
-      "p",
-      "716101a12f95c11de9dad2922edafcf6655e0a984e717fae1ed66320caa507c3"
     ],
     [
       "p",
@@ -28885,6 +28889,6 @@
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "c0dc269cc4d2329d046a870f4322e09e8bd8427fdfa18606a0eb2ca9a511c22b",
-  "sig": "dea6c0cda45c3ba68acf18c42de4a769565e5fc129ce3eeb5145f7d4060036b6c566743a56074b5a63294df979f9052188a6d7a980566505dd8748e0659b453e"
+  "id": "1c6c4f1128b0e58cd6afcb5c225fc4779f7f71aad02de800f3127faf54043d1a",
+  "sig": "e5fa4de62717fa79fb7ba77f4e256a5a82cebdfec92254085c95b49d73a199d4699a25b955aec4147159081ac7fda527b7c6275e70c4756418fd327b159d4189"
 }
