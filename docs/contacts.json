@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1698073982,
+  "created_at": 1698077732,
   "tags": [
     [
       "p",
@@ -28673,7 +28673,19 @@
     ],
     [
       "p",
+      "0ee3b18c587a8102f5836c48744140537480113bdf2864e0422bcc00f64c6e7e"
+    ],
+    [
+      "p",
       "cd50358cbefb8aa8d23f8ac96944e73f876c53e7370a8cc375681eb715036a92"
+    ],
+    [
+      "p",
+      "659a3f31db24bb7feb30fe44b8d9bd36f33be6b7132d2b224c0a6dac14381e26"
+    ],
+    [
+      "p",
+      "dc31d652a94aa23ad0643d81ee3e2ba6242f7e969a5cf9e576d7203d5aab8bc5"
     ],
     [
       "p",
@@ -28685,23 +28697,11 @@
     ],
     [
       "p",
-      "0ee3b18c587a8102f5836c48744140537480113bdf2864e0422bcc00f64c6e7e"
-    ],
-    [
-      "p",
-      "dc31d652a94aa23ad0643d81ee3e2ba6242f7e969a5cf9e576d7203d5aab8bc5"
-    ],
-    [
-      "p",
       "52b2ff7c3b95890a04c55f28871220d1d1479cea476fae98a4f0a221d3380180"
     ],
     [
       "p",
       "049797ea63cf0131583e018e3633c0d804b66d2c5d4acdadd84f537e87277d3f"
-    ],
-    [
-      "p",
-      "659a3f31db24bb7feb30fe44b8d9bd36f33be6b7132d2b224c0a6dac14381e26"
     ],
     [
       "p",
@@ -28761,6 +28761,6 @@
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "cf1ee9a52d3bf3f247d51c0dd9cd586d0a1a33edbd98771ffa68e1433c8418ae",
-  "sig": "f7410a6e9e2b3732e71237f3571d5cd42409050690dc43d8010d688416aa6db50ce74a74be46e214b10bba935d54ab49e810b797a79164774be39041a0a76da1"
+  "id": "47d56ca0f716c09c77ac43a400c700139d6d1b036501dbbc1e37fe9660d117fb",
+  "sig": "b3e5c55affd8b16547c8c4d3e033fe938309bca9b04818c455adc0bacb4bf1c3b27f0fd661bee6acb4193e1fc8e859eb093404190382033f133b2ec67bd6d1ee"
 }
