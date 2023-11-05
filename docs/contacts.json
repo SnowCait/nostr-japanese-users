@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1699171979,
+  "created_at": 1699175393,
   "tags": [
     [
       "p",
@@ -15950,9 +15950,13 @@
     [
       "p",
       "cc308078af229b5bd4d0cdf491a22b9366def0a489d6272f334425de562cb8e3"
+    ],
+    [
+      "p",
+      "2473536a6e2fd20bde6d6b2df4231649b64b66b53d80b8608780462475b05ec0"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "6df8f7a3aaea60b5a3d3f44697df741595d9c11dc14fff948be61965f1441b2d",
-  "sig": "eac90adf1a09df0ac331ab83f7d7d33d8ba52054117924758a6e02c77ca8ba344c8a0b438b99066fd1cb21a2678d71613f7a023e0cffc421c13b5120e95e9940"
+  "id": "3dc4dd5da958bea25bcf23b0f97ba9aa70f9e017060d4d3fc9b2a81ae6550a49",
+  "sig": "240718cec8cc53880b00da0ce86716a7b99cb1e4befc28b5821c3637a90be3c95736f32610523789f03152bdf8a8be1eb1c1651d546a6cf5316562cd86e676dc"
 }
