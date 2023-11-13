@@ -45,12 +45,30 @@ const followees = contactsEvent.tags.map(([,pubkey]) => pubkey);
 console.log('[since]', new Date(since * 1000).toString());
 
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
-const metadataEvents = await metadataPool.list(readRelays, [
+const followerEvents = await metadataPool.list(readRelays, [
+  {
+    kinds: [Kind.Contacts],
+    '#p': [pubkey]
+  }
+]);
+const unfollowedFollowers = [...new Set(
+  followerEvents
+    .filter(event => !followees.some(p => p === event.pubkey))
+    .map(event => event.pubkey)
+)];
+console.log('[unfollowed followers]', unfollowedFollowers.length);
+/** @type {import('nostr-tools').Filter} */
+const filters = [
   {
     kinds: [Kind.Metadata],
     since
+  },
+  {
+    kinds: [Kind.Metadata],
+    authors: unfollowedFollowers
   }
-]);
+];
+const metadataEvents = await metadataPool.list(readRelays, filters);
 metadataPool.close(readRelays);
 console.log('[metadata]', metadataEvents.length);
 
