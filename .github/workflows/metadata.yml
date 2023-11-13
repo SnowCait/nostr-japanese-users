@@ -19,7 +19,7 @@ jobs:
     steps:
       - run: node -v
       - run: npm -v
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - id: metadata
         run: echo "json=$(cat metadata.json | jq -c)" >> "$GITHUB_OUTPUT"
       - id: relays
