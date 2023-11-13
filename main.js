@@ -44,6 +44,8 @@ const since = options.since === undefined ? contactsEvent.created_at : Math.floo
 const followees = contactsEvent.tags.map(([,pubkey]) => pubkey);
 console.log('[since]', new Date(since * 1000).toString());
 
+const randomFollowees = Array.from({length: 100}, (v, k) => followees[Math.floor(Math.random() * followees.length)]);
+
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
 const followerEvents = await metadataPool.list(readRelays, [
   {
@@ -65,7 +67,7 @@ const filters = [
   },
   {
     kinds: [Kind.Metadata],
-    authors: unfollowedFollowers
+    authors: [...unfollowedFollowers, ...randomFollowees]
   }
 ];
 const metadataEvents = await metadataPool.list(readRelays, filters);
