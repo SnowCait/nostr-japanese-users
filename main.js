@@ -1,10 +1,12 @@
 import 'websocket-polyfill';
 import * as fs from 'fs/promises';
+import dotenv from 'dotenv';
 import { program } from 'commander';
 import { SimplePool, Kind, getPublicKey, nip19, getEventHash, signEvent } from 'nostr-tools';
 import relays from './relays.json' assert { type: 'json' };
 import readonlyRelays from './relays.readonly.json' assert { type: 'json' };
-import dotenv from 'dotenv';
+import { isProxy } from './nostr.js';
+
 dotenv.config();
 
 // Options
@@ -53,7 +55,7 @@ console.log('[metadata]', metadataEvents.length);
 
 const japaneseMetadataEvents = metadataEvents
   .filter(event =>
-    !event.tags.some(([tagName]) => tagName === 'mostr') &&
+    !isProxy(event) &&
     /[\p{Script_Extensions=Hiragana}\p{Script_Extensions=Katakana}]/u.test(
       event.content.replace(/[、。，．「」《》]/ug, '')
     )
