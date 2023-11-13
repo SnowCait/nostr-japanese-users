@@ -61,7 +61,7 @@ const japaneseMetadataEvents = metadataEvents
 
 console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.map(x => {
   const { display_name, name, about } = JSON.parse(x.content);
-  return `${display_name} (@${name}): ${about}`;
+  return `${display_name} (@${name}): ${about?.split('\n')[0]}`;
 }));
 
 if (japaneseMetadataEvents.length === 0) {
