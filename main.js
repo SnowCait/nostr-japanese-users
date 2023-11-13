@@ -41,6 +41,7 @@ if (contactsEvents.length === 0) {
 
 const contactsEvent = contactsEvents[0];
 const since = options.since === undefined ? contactsEvent.created_at : Math.floor(new Date(options.since).getTime() / 1000);
+const followees = contactsEvent.tags.map(([,pubkey]) => pubkey);
 console.log('[since]', new Date(since * 1000).toString());
 
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
@@ -55,7 +56,6 @@ console.log('[metadata]', metadataEvents.length);
 
 const japaneseMetadataEvents = metadataEvents
   .filter(event =>
-    !isProxy(event) &&
     /[\p{Script_Extensions=Hiragana}\p{Script_Extensions=Katakana}]/u.test(
       event.content.replace(/[、。，．「」《》]/ug, '')
     )
@@ -63,24 +63,22 @@ const japaneseMetadataEvents = metadataEvents
 
 console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.map(x => {
   const { display_name, name, about } = JSON.parse(x.content);
-  return `${display_name} (@${name}): ${about?.split('\n')[0]}`;
+  return `${isProxy(x) ? '[proxy] ' : ''}${display_name} (@${name}): ${about?.split('\n')[0]}`;
 }));
 
-if (japaneseMetadataEvents.length === 0) {
-  console.log('[no users]');
+const japanesePubkeys = japaneseMetadataEvents.filter(event => !isProxy(event)).map(x => x.pubkey);
+const proxyPubkeys = japaneseMetadataEvents.filter(event => isProxy(event)).map(event => event.pubkey);
+
+if (japanesePubkeys.length === 0 && !proxyPubkeys.some(pubkey => followees.some(p => p === pubkey))) {
+  console.log('[no diff]');
   process.exit();
 }
 
 const pubkeys = new Set([
-  ...contactsEvent.tags.map(([,pubkey]) => pubkey),
-  ...japaneseMetadataEvents.map(x => x.pubkey)
+  ...followees.filter(pubkey => !proxyPubkeys.some(p => p === pubkey)),
+  ...japanesePubkeys
 ]);
 console.log('[contacts]', pubkeys.size);
-
-if (pubkeys.size <= contactsEvent.tags.length) {
-  console.log('[no new users]');
-  process.exit();
-}
 
 const event = {
   kind: Kind.Contacts,
