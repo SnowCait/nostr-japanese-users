@@ -8,7 +8,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // Options
-program.option('--dry-run');
+program
+  .option('--dry-run')
+  .option('--since <time>');
 program.parse();
 const options = program.opts();
 
@@ -36,12 +38,14 @@ if (contactsEvents.length === 0) {
 }
 
 const contactsEvent = contactsEvents[0];
+const since = options.since === undefined ? contactsEvent.created_at : Math.floor(new Date(options.since).getTime() / 1000);
+console.log('[since]', new Date(since * 1000).toString());
 
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
 const metadataEvents = await metadataPool.list(readRelays, [
   {
     kinds: [Kind.Metadata],
-    since: contactsEvent.created_at
+    since
   }
 ]);
 metadataPool.close(readRelays);
