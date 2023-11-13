@@ -1,10 +1,16 @@
 import 'websocket-polyfill';
 import * as fs from 'fs/promises';
+import { program } from 'commander';
 import { SimplePool, Kind, getPublicKey, nip19, getEventHash, signEvent } from 'nostr-tools';
 import relays from './relays.json' assert { type: 'json' };
 import readonlyRelays from './relays.readonly.json' assert { type: 'json' };
 import dotenv from 'dotenv';
 dotenv.config();
+
+// Options
+program.option('--dry-run');
+program.parse();
+const options = program.opts();
 
 /** @type {string} */
 const privateKey = process.env.NOSTR_PRIVATE_KEY;
@@ -56,7 +62,7 @@ console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.
 
 if (japaneseMetadataEvents.length === 0) {
   console.log('[no users]');
-  process.exit(0);
+  process.exit();
 }
 
 const pubkeys = new Set([
@@ -67,7 +73,7 @@ console.log('[contacts]', pubkeys.size);
 
 if (pubkeys.size <= contactsEvent.tags.length) {
   console.log('[no new users]');
-  process.exit(0);
+  process.exit();
 }
 
 const event = {
@@ -81,6 +87,11 @@ event.id = getEventHash(event);
 event.sig = signEvent(event, seckey);
 
 await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
+
+if (options.dryRun) {
+  console.log('Skip publishing.');
+  process.exit();
+}
 
 const start = Date.now();
 const pub = contactsPool.publish(relays, event);
