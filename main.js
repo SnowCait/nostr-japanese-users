@@ -1,10 +1,18 @@
 import 'websocket-polyfill';
 import * as fs from 'fs/promises';
+import { program } from 'commander';
 import { SimplePool, Kind, getPublicKey, nip19, getEventHash, signEvent } from 'nostr-tools';
 import relays from './relays.json' assert { type: 'json' };
 import readonlyRelays from './relays.readonly.json' assert { type: 'json' };
 import dotenv from 'dotenv';
 dotenv.config();
+
+// Options
+program
+  .option('--dry-run')
+  .option('--since <time>');
+program.parse();
+const options = program.opts();
 
 /** @type {string} */
 const privateKey = process.env.NOSTR_PRIVATE_KEY;
@@ -30,12 +38,14 @@ if (contactsEvents.length === 0) {
 }
 
 const contactsEvent = contactsEvents[0];
+const since = options.since === undefined ? contactsEvent.created_at : Math.floor(new Date(options.since).getTime() / 1000);
+console.log('[since]', new Date(since * 1000).toString());
 
 const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
 const metadataEvents = await metadataPool.list(readRelays, [
   {
     kinds: [Kind.Metadata],
-    since: contactsEvent.created_at
+    since
   }
 ]);
 metadataPool.close(readRelays);
@@ -51,12 +61,12 @@ const japaneseMetadataEvents = metadataEvents
 
 console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.map(x => {
   const { display_name, name, about } = JSON.parse(x.content);
-  return `${display_name} (@${name}): ${about}`;
+  return `${display_name} (@${name}): ${about?.split('\n')[0]}`;
 }));
 
 if (japaneseMetadataEvents.length === 0) {
   console.log('[no users]');
-  process.exit(0);
+  process.exit();
 }
 
 const pubkeys = new Set([
@@ -67,7 +77,7 @@ console.log('[contacts]', pubkeys.size);
 
 if (pubkeys.size <= contactsEvent.tags.length) {
   console.log('[no new users]');
-  process.exit(0);
+  process.exit();
 }
 
 const event = {
@@ -81,6 +91,11 @@ event.id = getEventHash(event);
 event.sig = signEvent(event, seckey);
 
 await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
+
+if (options.dryRun) {
+  console.log('Skip publishing.');
+  process.exit();
+}
 
 const start = Date.now();
 const pub = contactsPool.publish(relays, event);
