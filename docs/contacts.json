@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1700223704,
+  "created_at": 1700226993,
   "tags": [
     [
       "p",
@@ -14789,10 +14789,6 @@
     ],
     [
       "p",
-      "b6028c4bc8290cc452d799c285f37484c98d6ba37b8b704dfc747bc7bbd03bef"
-    ],
-    [
-      "p",
       "c6532e846654ed943a3dae2bd7eb9aff19c7463580abdfecf5d1a12036a554dd"
     ],
     [
@@ -15373,10 +15369,6 @@
     ],
     [
       "p",
-      "ed1c547abef77814ddc0664312a6b0678ff0937496b3d9bcc3e2726b4223d4e3"
-    ],
-    [
-      "p",
       "eb853ac3cf377205b3f42ba9fb2d2f1600019a3809179533008dd0952d993c08"
     ],
     [
@@ -15457,10 +15449,6 @@
     ],
     [
       "p",
-      "cac9e15ae69e3a32fce74d0ecd804c49bb602366d3b440309567a4c67e70a8b9"
-    ],
-    [
-      "p",
       "e66c658961f20cbd6605d1c050d77c64fe5d20cc4f9430e63499dc14ea1f7a91"
     ],
     [
@@ -15510,10 +15498,6 @@
     [
       "p",
       "32549c16b63959dff7501fc1adc5a516dc26efd632a3bf2fc56aa7fedae4d74d"
-    ],
-    [
-      "p",
-      "818133ae2bf1dc582df5bb8105f8f921ebc9a62a63843f83e846536522a8bce4"
     ],
     [
       "p",
@@ -16246,9 +16230,13 @@
     [
       "p",
       "4ad2b1c02e302f8293370a09fd638f1ac89e886a77f0bd58f2d82fcd53573b54"
+    ],
+    [
+      "p",
+      "9c4611fc3ebae30e591639439e5c00fe6dd4b698f0ebb6b959c49d90f3de41a0"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "b6ec3155c32e66e4c632ec2d1f8b14b9272122fdf66c402110312a027fb35eab",
-  "sig": "6d41640e69f1108461df6f00e1b0ccd0f20ab263fe98967bad69069776eea33550b9a70735843939bb046c1e189570f22abb2af426dd4fa8437051485c3ccc32"
+  "id": "936becc101156750ec322ee4e8c4ee5bed08eb09752a19d77de9c8462705d33f",
+  "sig": "f3e7fb4a37664e78eec63870209a1c4ca57dcc79972ad24f81b22ef36a25c0ebe1d09cd5c4b073ebe105e8d0717316ff6d8e122dd0bc2922797589ae5c9ac830"
 }
