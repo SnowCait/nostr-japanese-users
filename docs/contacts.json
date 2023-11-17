@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1700226993,
+  "created_at": 1700230284,
   "tags": [
     [
       "p",
@@ -14545,10 +14545,6 @@
     ],
     [
       "p",
-      "e776f958fb9ce5b2f660a3bee6ccb278a82fb3e56701c05841ca7cc268c8f90c"
-    ],
-    [
-      "p",
       "2a79aae76a42151c8e94cfa8bef223962b376362008862a15cca97d4f68b880e"
     ],
     [
@@ -15365,10 +15361,6 @@
     ],
     [
       "p",
-      "bcde1c7e47751b1253c96913845f977e62d57107d6780c2569338a38f7624294"
-    ],
-    [
-      "p",
       "eb853ac3cf377205b3f42ba9fb2d2f1600019a3809179533008dd0952d993c08"
     ],
     [
@@ -16137,10 +16129,6 @@
     ],
     [
       "p",
-      "c2058630555bd51e09bab186d5e3760dfec0cdd3dcf8de53e056b5daceec4767"
-    ],
-    [
-      "p",
       "669c57e435f761faade42de1acd3cbe0c129c441265404fe1199854ee4b60219"
     ],
     [
@@ -16234,9 +16222,17 @@
     [
       "p",
       "9c4611fc3ebae30e591639439e5c00fe6dd4b698f0ebb6b959c49d90f3de41a0"
+    ],
+    [
+      "p",
+      "166be7432c98a929e273fe20624e585d163dffa84091895049bfbc4dd91ab464"
+    ],
+    [
+      "p",
+      "c2058630555bd51e09bab186d5e3760dfec0cdd3dcf8de53e056b5daceec4767"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "936becc101156750ec322ee4e8c4ee5bed08eb09752a19d77de9c8462705d33f",
-  "sig": "f3e7fb4a37664e78eec63870209a1c4ca57dcc79972ad24f81b22ef36a25c0ebe1d09cd5c4b073ebe105e8d0717316ff6d8e122dd0bc2922797589ae5c9ac830"
+  "id": "bc9fecd2815453245ea754d672c7c0647c6aed7e64246544b3c4d20d65fb63fd",
+  "sig": "d9036634735337a4691aa3f34aaeeec394d7fc70b76096cbf92982f13c84fce54292f4326f7153735fdb1ba97c1c162ff51f2177abadf36c39b7a0348c18dc3a"
 }
