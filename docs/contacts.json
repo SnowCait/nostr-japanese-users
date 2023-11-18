@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1700284311,
+  "created_at": 1700288033,
   "tags": [
     [
       "p",
@@ -15145,10 +15145,6 @@
     ],
     [
       "p",
-      "7513910d4f1ece0ab8b921494b06e0a549a5828dc3837eecdd3f4b9fcd9dc814"
-    ],
-    [
-      "p",
       "eb853ac3cf377205b3f42ba9fb2d2f1600019a3809179533008dd0952d993c08"
     ],
     [
@@ -15753,10 +15749,6 @@
     ],
     [
       "p",
-      "29907d1ea8120c1893407a57f658b9bb4c8075b5b67672337186cc8d92e5d249"
-    ],
-    [
-      "p",
       "6de9102f49cc4dbc44248f1602b5886e69046fd605d6c877fc474b6f52f9bf1f"
     ],
     [
@@ -15866,10 +15858,6 @@
     [
       "p",
       "3baa90319086563d5bf73e464ea1d28d7aa71f4067b3219057d5d2134626cae6"
-    ],
-    [
-      "p",
-      "93fb75f2fdae2814f40b1d06c28d3a4f93a7ce3b13f99bbb0bf79ebfd57ece23"
     ],
     [
       "p",
@@ -16010,9 +15998,17 @@
     [
       "p",
       "099e26d54054bd66db6a36d0abaa6ec3d1c55e0126d6548817ce3b5b7bd81dbe"
+    ],
+    [
+      "p",
+      "29907d1ea8120c1893407a57f658b9bb4c8075b5b67672337186cc8d92e5d249"
+    ],
+    [
+      "p",
+      "93fb75f2fdae2814f40b1d06c28d3a4f93a7ce3b13f99bbb0bf79ebfd57ece23"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "e722f0736fb83feb9ac6bb39e98686d8cc1baf87e550675b0eb4239e54c5463c",
-  "sig": "21f6b2521ebd2000a263e468b301155cdeb30491e4ab54d965932dcdcac89bdbe25d0ea2884d03daceefbd43bd52fda1db65fd58fe6ac8a1f73b537c08f47b00"
+  "id": "2e322cf5bffd35472c242be0c07676c194f94867e66ab38649dfb93208cd723c",
+  "sig": "737b4b51944ac9824e7476265e8a28b85869239342f5e37c6e7f4736ff8cc92df17434222b40d30550e804051cd1f5801c20579aa8679d3317876b0981a661c0"
 }
