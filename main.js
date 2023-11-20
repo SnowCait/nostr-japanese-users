@@ -82,8 +82,12 @@ const japaneseMetadataEvents = metadataEvents
   );
 
 console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.map(x => {
-  const { display_name, name, about } = JSON.parse(x.content);
-  return `${isProxy(x) ? '[proxy] ' : ''}${display_name} (@${name}): ${about?.split('\n')[0]}`;
+  try {
+    const { display_name, name, about } = JSON.parse(x.content);
+    return `${isProxy(x) ? '[proxy] ' : ''}${display_name} (@${name}): ${about?.split('\n')[0]}`;
+  } catch (error) {
+    return `${isProxy(x) ? '[proxy] ' : ''}${x.content}`;
+  }
 }));
 
 const japanesePubkeys = japaneseMetadataEvents.filter(event => !isProxy(event)).map(x => x.pubkey);
