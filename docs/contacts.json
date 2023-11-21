@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1700547324,
+  "created_at": 1700550654,
   "tags": [
     [
       "p",
@@ -13505,10 +13505,6 @@
     ],
     [
       "p",
-      "e86aa2f382667bb80ac552ea71335a9e3527bf00552b53712cb860b2fca9f969"
-    ],
-    [
-      "p",
       "cd70588e162f568994eae7fbcf79de3271bc067d48b328941b4abe0007311402"
     ],
     [
@@ -14574,10 +14570,6 @@
     [
       "p",
       "44bd7063653a4958d3c84dc842ec13f78b7d4ddfab34f1d86b21cc31095d49f6"
-    ],
-    [
-      "p",
-      "0434bf6fd82b26bb1811c2d323f0162752b65a90b08b85de54bf051bb761bf24"
     ],
     [
       "p",
@@ -15681,10 +15673,6 @@
     ],
     [
       "p",
-      "53ff9c9d8e043f1083ef6705639004a73fae0227932065629f488c0108cce575"
-    ],
-    [
-      "p",
       "c6b04ee6f8fb0cb033d2e13298ca27dc00ef11d99bbb6fc3bd5749b907d3bff4"
     ],
     [
@@ -15810,9 +15798,17 @@
     [
       "p",
       "afc54ece32d078e0ec468b8b59da64b9253d446ddd301472931d13c73ff3be96"
+    ],
+    [
+      "p",
+      "b38933b474c54256b82b1cecb56cd6f002e78f37f441a0f3c924f61201863614"
+    ],
+    [
+      "p",
+      "53ff9c9d8e043f1083ef6705639004a73fae0227932065629f488c0108cce575"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "447bc43887174a17e86b0a1a4704712c2d3f223735cc10626185a7a263ea8f42",
-  "sig": "dfb086cd755b37be9406c17431cc44698174922bd2ccc39a6723a6ae39df12121a7a07c513082c2434f25509bfce99b27e4fa0636869b02597db7c8f53a575f3"
+  "id": "041649fb9846b6e8345d992f3871cfe39b4b3bf568cfe7e88d73738a19e1c710",
+  "sig": "5888c5f583090654ddf7f0ce9f5e2a4663b1420605242ad61faaeed56e9a42891d208e7eb17f70df0bd9b58c589f91deebb2b33657eb2bdf0915c1e57ff24bac"
 }
