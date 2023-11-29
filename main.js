@@ -131,7 +131,7 @@ const pubkeys = new Set([
   ...followees.filter(
     pubkey => !proxyPubkeys.some(p => p === pubkey) && !manyReportedPubkeys.some(p => p === pubkey)
   ),
-  ...japanesePubkeys
+  ...japanesePubkeys.filter(pubkey => !manyReportedPubkeys.some(p => p === pubkey))
 ]);
 console.log('[contacts]', pubkeys.size);
 
