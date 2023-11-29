@@ -46,8 +46,8 @@ console.log('[since]', new Date(since * 1000).toString());
 
 const randomFollowees = Array.from({length: 100}, (v, k) => followees[Math.floor(Math.random() * followees.length)]);
 
-const metadataPool = new SimplePool({ eoseSubTimeout: 60000 });
-const followerEvents = await metadataPool.list(readRelays, [
+const readPool = new SimplePool({ eoseSubTimeout: 60000 });
+const followerEvents = await readPool.list(readRelays, [
   {
     kinds: [Kind.Contacts],
     '#p': [pubkey]
@@ -70,8 +70,7 @@ const filters = [
     authors: [...unfollowedFollowers, ...randomFollowees]
   }
 ];
-const metadataEvents = await metadataPool.list(readRelays, filters);
-metadataPool.close(readRelays);
+const metadataEvents = await readPool.list(readRelays, filters);
 console.log('[metadata]', metadataEvents.length);
 
 const japaneseMetadataEvents = metadataEvents
@@ -93,13 +92,45 @@ console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.
 const japanesePubkeys = japaneseMetadataEvents.filter(event => !isProxy(event)).map(x => x.pubkey);
 const proxyPubkeys = japaneseMetadataEvents.filter(event => isProxy(event)).map(event => event.pubkey);
 
-if (japanesePubkeys.length === 0 && !proxyPubkeys.some(pubkey => followees.some(p => p === pubkey))) {
+// NIP-56 Reporting
+const reportingEvents = await readPool.list(readRelays, [
+  {
+    kinds: [1984],
+    '#p': japaneseMetadataEvents.map(event => event.pubkey)
+  }
+]);
+readPool.close(readRelays);
+
+const reportedPubkeys = reportingEvents.flatMap(
+  event => event.tags.filter(([tagName]) => tagName === 'p').map(([,pubkey]) => pubkey)
+).reduce((map, p) => {
+  const increment = 1;
+  if (map.has(p)) {
+    const count = map.get(p);
+    map.set(p, count + increment);
+  } else {
+    map.set(p, increment);
+  }
+  return map;
+}, new Map());
+const manyReportedPubkeys = [...reportedPubkeys]
+  .filter(([, count]) => count > 56)
+  .map(([pubkey]) => pubkey);
+console.log('[reported]', reportedPubkeys, manyReportedPubkeys);
+
+if (
+  japanesePubkeys.length === 0 &&
+  !proxyPubkeys.some(pubkey => followees.some(p => p === pubkey)) &&
+  !manyReportedPubkeys.some(pubkey => followees.some(p => p === pubkey))
+) {
   console.log('[no diff]');
   process.exit();
 }
 
 const pubkeys = new Set([
-  ...followees.filter(pubkey => !proxyPubkeys.some(p => p === pubkey)),
+  ...followees.filter(
+    pubkey => !proxyPubkeys.some(p => p === pubkey) && !manyReportedPubkeys.some(p => p === pubkey)
+  ),
   ...japanesePubkeys
 ]);
 console.log('[contacts]', pubkeys.size);
