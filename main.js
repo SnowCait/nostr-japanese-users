@@ -74,11 +74,7 @@ const metadataEvents = await readPool.list(readRelays, filters);
 console.log('[metadata]', metadataEvents.length);
 
 const japaneseMetadataEvents = metadataEvents
-  .filter(event =>
-    /[\p{Script_Extensions=Hiragana}\p{Script_Extensions=Katakana}]/u.test(
-      event.content.replace(/[、。，．「」《》]/ug, '')
-    )
-  );
+  .filter(event => /[ぁ-ゔァ-ヺ]/u.test(event.content));
 
 console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.map(x => {
   try {
