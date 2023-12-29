@@ -22,7 +22,7 @@ const seckey = privateKey.startsWith('nsec') ? nip19.decode(privateKey).data : p
 const pubkey = getPublicKey(seckey);
 console.log('[pubkey]', pubkey);
 
-const readRelays = [...relays, readonlyRelays];
+const readRelays = [...relays, ...readonlyRelays];
 
 const contactsPool = new SimplePool();
 
