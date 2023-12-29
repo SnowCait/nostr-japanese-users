@@ -48,13 +48,7 @@ const randomFollowees = Array.from({ length: 10 }, (v, k) => followees[Math.floo
 
 const readPool = new SimplePool({ eoseSubTimeout: 60000 });
 
-const anyEvents = await readPool.list(readRelays, randomFollowees.map(p => {
-  return {
-    authors: [p],
-    limit: 1,
-    since: Math.floor(Date.now() / 1000) - 7 * 24 * 60 * 60
-  };
-}));
+const anyEvents = await readPool.list(readRelays, since7daysAgoFilters(randomFollowees));
 const inactiveFollowees = randomFollowees.filter(p => !anyEvents.some(event => event.pubkey === p));
 console.log('[inactive]', inactiveFollowees, inactiveFollowees.length);
 
@@ -96,7 +90,7 @@ console.log('[japanese]', japaneseMetadataEvents.length, japaneseMetadataEvents.
   }
 }));
 
-const japanesePubkeys = japaneseMetadataEvents.filter(event => !isProxy(event)).map(x => x.pubkey);
+const japanesePubkeys = japaneseMetadataEvents.filter(event => !isProxy(event)).map(event => event.pubkey);
 const proxyPubkeys = japaneseMetadataEvents.filter(event => isProxy(event)).map(event => event.pubkey);
 
 // NIP-56 Reporting
@@ -134,11 +128,22 @@ if (
   process.exit();
 }
 
+const sleep = await fs.readFile('docs/sleep.json');
+/** @type {import('nostr-tools').Event} */
+const sleepEvent = JSON.parse(sleep);
+const sleepers = sleepEvent.tags.filter(([tagName]) => tagName === 'p').map(([, pubkey]) => pubkey);
+const randomSleepers = Array.from({ length: 10 }, (v, k) => sleepers[Math.floor(Math.random() * sleepers.length)]);
+
+const sleepersAnyEvents = await readPool.list(readRelays, since7daysAgoFilters(randomSleepers));
+const activeSleepers = [...new Set(sleepersAnyEvents.map(event => event.pubkey))];
+console.log('[active]', activeSleepers, activeSleepers.length);
+
 const pubkeys = new Set([
   ...followees.filter(
     pubkey => !proxyPubkeys.includes(pubkey) && !manyReportedPubkeys.includes(pubkey) && !inactiveFollowees.includes(pubkey)
   ),
-  ...japanesePubkeys.filter(pubkey => !manyReportedPubkeys.includes(pubkey))
+  ...japanesePubkeys.filter(pubkey => !manyReportedPubkeys.includes(pubkey)),
+  ...activeSleepers
 ]);
 console.log('[contacts]', pubkeys.size);
 
@@ -155,10 +160,8 @@ event.sig = signEvent(event, seckey);
 
 await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
 
-const sleep = await fs.readFile('docs/sleep.json');
-/** @type {import('nostr-tools').Event} */
-const sleepEvent = JSON.parse(sleep);
-sleepEvent.tags.push(...inactiveFollowees.map(pubkey => ['p', pubkey]));
+sleepEvent.tags = sleepEvent.tags.filter(([, pubkey]) => !activeSleepers.includes(pubkey));
+sleepEvent.tags.push(...inactiveFollowees.map(pubkey => ['p', pubkey]).filter(pubkey => !proxyPubkeys.includes(pubkey)));
 sleepEvent.id = getEventHash(sleepEvent);
 sleepEvent.sig = signEvent(sleepEvent, seckey);
 
@@ -178,3 +181,17 @@ pub.on('failed', relay => {
   console.log('[failed]', relay, `${Date.now() - start}ms`);
 });
 setTimeout(() => contactsPool.close(relays), 3000);
+
+/**
+ * @param {string[]} pubkeys
+ * @returns {import('nostr-tools').Filter[]}
+ */
+function since7daysAgoFilters(pubkeys) {
+  return pubkeys.map(p => {
+    return {
+      authors: [p],
+      limit: 1,
+      since: Math.floor(Date.now() / 1000) - 7 * 24 * 60 * 60,
+    };
+  })
+}
