@@ -41,10 +41,10 @@ if (contactsEvents.length === 0) {
 
 const contactsEvent = contactsEvents[0];
 const since = options.since === undefined ? contactsEvent.created_at : Math.floor(new Date(options.since).getTime() / 1000);
-const followees = contactsEvent.tags.map(([,pubkey]) => pubkey);
+const followees = contactsEvent.tags.map(([, pubkey]) => pubkey);
 console.log('[since]', new Date(since * 1000).toString());
 
-const randomFollowees = Array.from({length: 100}, (v, k) => followees[Math.floor(Math.random() * followees.length)]);
+const randomFollowees = Array.from({ length: 100 }, (v, k) => followees[Math.floor(Math.random() * followees.length)]);
 
 const readPool = new SimplePool({ eoseSubTimeout: 60000 });
 const followerEvents = await readPool.list(readRelays, [
@@ -98,7 +98,7 @@ const reportingEvents = await readPool.list(readRelays, [
 readPool.close(readRelays);
 
 const reportedPubkeys = reportingEvents.flatMap(
-  event => event.tags.filter(([tagName]) => tagName === 'p').map(([,pubkey]) => pubkey)
+  event => event.tags.filter(([tagName]) => tagName === 'p').map(([, pubkey]) => pubkey)
 ).reduce((map, p) => {
   const increment = 1;
   if (map.has(p)) {
