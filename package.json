@@ -8,6 +8,7 @@
     "websocket-polyfill": "^0.0.3"
   },
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "dry": "node main.js --dry-run"
   }
 }
