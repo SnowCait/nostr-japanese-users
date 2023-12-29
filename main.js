@@ -44,9 +44,20 @@ const since = options.since === undefined ? contactsEvent.created_at : Math.floo
 const followees = contactsEvent.tags.map(([, pubkey]) => pubkey);
 console.log('[since]', new Date(since * 1000).toString());
 
-const randomFollowees = Array.from({ length: 100 }, (v, k) => followees[Math.floor(Math.random() * followees.length)]);
+const randomFollowees = Array.from({ length: 10 }, (v, k) => followees[Math.floor(Math.random() * followees.length)]);
 
 const readPool = new SimplePool({ eoseSubTimeout: 60000 });
+
+const anyEvents = await readPool.list(readRelays, randomFollowees.map(p => {
+  return {
+    authors: [p],
+    limit: 1,
+    since: Math.floor(Date.now() / 1000) - 7 * 24 * 60 * 60
+  };
+}));
+const inactiveFollowees = randomFollowees.filter(p => !anyEvents.some(event => event.pubkey === p));
+console.log('[inactive]', inactiveFollowees, inactiveFollowees.length);
+
 const followerEvents = await readPool.list(readRelays, [
   {
     kinds: [Kind.Contacts],
@@ -125,16 +136,17 @@ if (
 
 const pubkeys = new Set([
   ...followees.filter(
-    pubkey => !proxyPubkeys.some(p => p === pubkey) && !manyReportedPubkeys.some(p => p === pubkey)
+    pubkey => !proxyPubkeys.some(p => p === pubkey) && !manyReportedPubkeys.some(p => p === pubkey) && !inactiveFollowees.includes(pubkey)
   ),
   ...japanesePubkeys.filter(pubkey => !manyReportedPubkeys.some(p => p === pubkey))
 ]);
 console.log('[contacts]', pubkeys.size);
 
+const now = Math.floor(Date.now() / 1000);
 const event = {
   kind: Kind.Contacts,
   pubkey,
-  created_at: Math.floor(Date.now() / 1000),
+  created_at: now,
   tags: Array.from(pubkeys).map(pubkey => ['p', pubkey]),
   content: contactsEvent.content
 };
@@ -142,6 +154,15 @@ event.id = getEventHash(event);
 event.sig = signEvent(event, seckey);
 
 await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
+
+const sleep = await fs.readFile('docs/sleep.json');
+/** @type {import('nostr-tools').Event} */
+const sleepEvent = JSON.parse(sleep);
+sleepEvent.tags.push(...inactiveFollowees.map(pubkey => ['p', pubkey]));
+sleepEvent.id = getEventHash(sleepEvent);
+sleepEvent.sig = signEvent(sleepEvent, seckey);
+
+await fs.writeFile('docs/sleep.json', JSON.stringify(sleepEvent, null, 2));
 
 if (options.dryRun) {
   console.log('Skip publishing.');
