@@ -66,7 +66,7 @@ const followerEvents = await readPool.list(readRelays, [
 ]);
 const unfollowedFollowers = [...new Set(
   followerEvents
-    .filter(event => !followees.some(p => p === event.pubkey))
+    .filter(event => !followees.includes(event.pubkey))
     .map(event => event.pubkey)
 )];
 console.log('[unfollowed followers]', unfollowedFollowers.length);
@@ -127,8 +127,8 @@ console.log('[reported]', reportedPubkeys, manyReportedPubkeys);
 
 if (
   japanesePubkeys.length === 0 &&
-  !proxyPubkeys.some(pubkey => followees.some(p => p === pubkey)) &&
-  !manyReportedPubkeys.some(pubkey => followees.some(p => p === pubkey))
+  !proxyPubkeys.some(pubkey => followees.includes(pubkey)) &&
+  !manyReportedPubkeys.some(pubkey => followees.includes(pubkey))
 ) {
   console.log('[no diff]');
   process.exit();
@@ -136,9 +136,9 @@ if (
 
 const pubkeys = new Set([
   ...followees.filter(
-    pubkey => !proxyPubkeys.some(p => p === pubkey) && !manyReportedPubkeys.some(p => p === pubkey) && !inactiveFollowees.includes(pubkey)
+    pubkey => !proxyPubkeys.includes(pubkey) && !manyReportedPubkeys.includes(pubkey) && !inactiveFollowees.includes(pubkey)
   ),
-  ...japanesePubkeys.filter(pubkey => !manyReportedPubkeys.some(p => p === pubkey))
+  ...japanesePubkeys.filter(pubkey => !manyReportedPubkeys.includes(pubkey))
 ]);
 console.log('[contacts]', pubkeys.size);
 
