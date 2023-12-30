@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1703901061,
+  "created_at": 1703902988,
   "tags": [
     [
       "p",
@@ -5089,10 +5089,6 @@
     ],
     [
       "p",
-      "d169fa87f4a0ac6b28cf932002d4f2644c0d841ec159dd9faad4de9a1988945a"
-    ],
-    [
-      "p",
       "a0aa0355e6a7ef9d921605b183032cd4613212049a8255545b998ca89597f85f"
     ],
     [
@@ -9693,10 +9689,6 @@
     ],
     [
       "p",
-      "da108dba38b3b898be4b1cfbf85576b98a5b9e8208a055ee03b19d74d531337d"
-    ],
-    [
-      "p",
       "b8b468faf60494187bcd38d378e589d86c58b378c5e2116e4ae31980e2f498b9"
     ],
     [
@@ -9902,10 +9894,6 @@
     [
       "p",
       "078fd72d941e2302dd1559f40f6b324719067f3c97b24483d2af652d7f6ea865"
-    ],
-    [
-      "p",
-      "283fdfa5c66777f09f5dac335cd0f62cca2cd5f3001c3f726ed830d064f6b10e"
     ],
     [
       "p",
@@ -10369,10 +10357,6 @@
     ],
     [
       "p",
-      "9f274673a1b87c109d26f12a64167f12be61fbb9ed0b8279bfcc972bb0b9a153"
-    ],
-    [
-      "p",
       "9cbc0a96d55e3e0e8866232b111a357a61cfec8be580110db34cc841cef4e59d"
     ],
     [
@@ -10830,10 +10814,6 @@
     [
       "p",
       "d2ebec294ad5a38d948799a3c9404a616e0231ede51b543b92c19b6dfec4abb2"
-    ],
-    [
-      "p",
-      "ea13369f0a5e38b267ed9cebb61b1127d64bf60a9f6794458ca1ab923b4f1b10"
     ],
     [
       "p",
@@ -11626,10 +11606,6 @@
     [
       "p",
       "f6b03095bcff0920552f870985e15c187235638bf64c9102114782bdcf993938"
-    ],
-    [
-      "p",
-      "9c68ad282eb43d0487ed1d70193314029ccb8ff8853cebc7bff704ac48d138c5"
     ],
     [
       "p",
@@ -13845,10 +13821,6 @@
     ],
     [
       "p",
-      "696c58e3d12589eb5178910bba189ad76018022555276d7323e99ea2093fa7ae"
-    ],
-    [
-      "p",
       "ee818db77d3d1cb5030adeb116a401d7cda127f67825d3eac70f11f79fe1fcbd"
     ],
     [
@@ -15122,10 +15094,6 @@
     [
       "p",
       "f3d3fb094ecf55beb08054e3e0fd75c447df9b5bc563bbfb6bb0c5dd98bb9705"
-    ],
-    [
-      "p",
-      "03b6b376b23affbce1792e2481ccdad674586ca2eac901518d4f563522e94ff1"
     ],
     [
       "p",
@@ -17405,10 +17373,6 @@
     ],
     [
       "p",
-      "86606498e8dfd5b765cb3d611d517a7b461aa8d09894875c1c50beb588aeacc4"
-    ],
-    [
-      "p",
       "12440e9845fa101775218b50ff2ef0b0951668ba397cad2eecae77e4592513fc"
     ],
     [
@@ -17618,9 +17582,41 @@
     [
       "p",
       "55b7d9d706ca0138f634b48bf7da93d814b0e654dea8b7c206248b908a893218"
+    ],
+    [
+      "p",
+      "d169fa87f4a0ac6b28cf932002d4f2644c0d841ec159dd9faad4de9a1988945a"
+    ],
+    [
+      "p",
+      "03b6b376b23affbce1792e2481ccdad674586ca2eac901518d4f563522e94ff1"
+    ],
+    [
+      "p",
+      "283fdfa5c66777f09f5dac335cd0f62cca2cd5f3001c3f726ed830d064f6b10e"
+    ],
+    [
+      "p",
+      "da108dba38b3b898be4b1cfbf85576b98a5b9e8208a055ee03b19d74d531337d"
+    ],
+    [
+      "p",
+      "9f274673a1b87c109d26f12a64167f12be61fbb9ed0b8279bfcc972bb0b9a153"
+    ],
+    [
+      "p",
+      "86606498e8dfd5b765cb3d611d517a7b461aa8d09894875c1c50beb588aeacc4"
+    ],
+    [
+      "p",
+      "9c68ad282eb43d0487ed1d70193314029ccb8ff8853cebc7bff704ac48d138c5"
+    ],
+    [
+      "p",
+      "696c58e3d12589eb5178910bba189ad76018022555276d7323e99ea2093fa7ae"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "5cf9f8102a6abe2e915843812d14a1809b59e8383e6e12ca799fb21fb25d7f21",
-  "sig": "5898ec38e1e6845e2a2b9c0183631755c28f8b80ff1e5332dedc93cdb405ed0c99cb37051cdb122d95267ca90b317e00eecd1c8833a8b2a2400fe5c9378964af"
+  "id": "78bd6eef7be0411f954fc1eca64f085b5153efaa03d74c77eb616e903dce019e",
+  "sig": "d0aed41a8a36cc27a0932fbf90251483fa6e08299d2bb3f85efcc41abea082ec92b1a48c59b131c63093b1f9cd43f20a109c5efe7403a189ec02695b44eeb5a8"
 }
