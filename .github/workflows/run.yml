@@ -2,7 +2,7 @@ name: Run
 
 on:
   schedule:
-    - cron: 0 * * * *
+    - cron: '*/15 * * * *'
   workflow_dispatch:
   push:
     branches:
@@ -11,6 +11,9 @@ on:
       - .github/workflows/run.yml
       - '*.js'
       - package*.json
+
+concurrency:
+  group: ${{ github.workflow }}
 
 permissions:
   contents: write
