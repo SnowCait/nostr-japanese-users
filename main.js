@@ -142,7 +142,7 @@ const pubkeys = new Set([
   ...followees.filter(
     pubkey => !proxyPubkeys.includes(pubkey) && !manyReportedPubkeys.includes(pubkey) && !inactiveFollowees.includes(pubkey)
   ),
-  ...japanesePubkeys.filter(pubkey => !manyReportedPubkeys.includes(pubkey)),
+  ...japanesePubkeys.filter(pubkey => !manyReportedPubkeys.includes(pubkey) && !inactiveFollowees.includes(pubkey)),
   ...activeSleepers
 ]);
 console.log('[contacts]', pubkeys.size);
@@ -161,7 +161,13 @@ event.sig = signEvent(event, seckey);
 await fs.writeFile('docs/contacts.json', JSON.stringify(event, null, 2));
 
 sleepEvent.tags = sleepEvent.tags.filter(([, pubkey]) => !activeSleepers.includes(pubkey));
-sleepEvent.tags.push(...inactiveFollowees.map(pubkey => ['p', pubkey]).filter(pubkey => !proxyPubkeys.includes(pubkey)));
+sleepEvent.tags.push(
+  ...inactiveFollowees
+    .map(pubkey => ['p', pubkey])
+    .filter(
+      pubkey => !proxyPubkeys.includes(pubkey) && !sleepEvent.tags.some(([tagName, p]) => tagName === 'p' && p === pubkey)
+    )
+);
 sleepEvent.id = getEventHash(sleepEvent);
 sleepEvent.sig = signEvent(sleepEvent, seckey);
 
