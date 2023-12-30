@@ -12,6 +12,9 @@ on:
       - '*.js'
       - package*.json
 
+concurrency:
+  group: ${{ github.workflow }}
+
 permissions:
   contents: write
 
