@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1704148600,
+  "created_at": 1704149433,
   "tags": [
     [
       "p",
@@ -1118,10 +1118,6 @@
     [
       "p",
       "9fa984d77feefdce27fd15ac9ae0033e0dae249c6c69b8a098b2a09d2cceef29"
-    ],
-    [
-      "p",
-      "8fbd721c40ad31031883fde090c51366abb5dfe18b54600767a4418c09b62258"
     ],
     [
       "p",
@@ -2514,10 +2510,6 @@
     [
       "p",
       "607d6cdad8a11fdc251154373a5a32a0cbfb7d5e9c75db1f12d0d8cba841275e"
-    ],
-    [
-      "p",
-      "70a1ddaaa89d165bf9efabfb022592d8203012285ede1b9fc68505ffe56ec4c0"
     ],
     [
       "p",
@@ -4138,10 +4130,6 @@
     [
       "p",
       "f8c605e438977a709b2b046bf5935a991a44776cc0a236bd4ce1a2f04fb85e55"
-    ],
-    [
-      "p",
-      "0afa35f6c6e3a7e1923406a1191a3266d2c42f373005df8fc8311a31635bbc7c"
     ],
     [
       "p",
@@ -6170,10 +6158,6 @@
     [
       "p",
       "0e9eca2b8ce6bcc25a48a1e280472aa32e3d5235e0690b6816919677777af385"
-    ],
-    [
-      "p",
-      "9c411746180c0113317cc43fe79f89c9a1fb5e95efcc864cbff5e3d2df9a1b5e"
     ],
     [
       "p",
@@ -11982,9 +11966,17 @@
     [
       "p",
       "77154336e2a91d695c3b419f7d7ec4ecbdd0e390cca233f1186bd66dfacf5e02"
+    ],
+    [
+      "p",
+      "abce76e9adff1978c2cb346402413c2f49f28354707c78b4bb84c9e867b8bb99"
+    ],
+    [
+      "p",
+      "e239c0cb2401b64249212e7ca38fecbfd76e7d5d8ba9c1846881e2b932265fe5"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "4f99bf8ae577bcef0e9785475c13025efd6ae5e5068b9b98940708c546993a99",
-  "sig": "cc9d2c1590499a73364d01095ca63eb445a88d36b688d407bf065a4fa3f556a587d367e4ea83ac0987e48c10e2c4e17fa88b68ea55ef0045b49a80dad673dc98"
+  "id": "d997f1df01f45d0df4f789d2ebcf6c73c94a891a659358ff802742c73ab88258",
+  "sig": "000a46512192bc6e60242a4ae13414c06ef5d46837f3e1cb5d0f254b48c3b2bf529293e04f01c1378961e8dc0769447b75f718ae25422e37e34b9022fb6bb120"
 }
