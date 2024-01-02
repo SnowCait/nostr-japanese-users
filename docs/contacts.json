@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1704230553,
+  "created_at": 1704231370,
   "tags": [
     [
       "p",
@@ -718,10 +718,6 @@
     [
       "p",
       "9aa3a3ccc2ed8056b598e632bf98f55ce20a9e2494d5502149aeba838ad7a556"
-    ],
-    [
-      "p",
-      "3f49c4a7052a5c60457416a94bf0d40804c992f7b9159a23fdf3185b7c38f069"
     ],
     [
       "p",
@@ -1570,10 +1566,6 @@
     [
       "p",
       "f64302c7ad2baf4d899ecab909e61d5b89061c391c8609d3305b3b49e2d6fad1"
-    ],
-    [
-      "p",
-      "17378c696c7e40fb37d6352d2fdeff6d00ca281ea76676e151788a83b0b78b7e"
     ],
     [
       "p",
@@ -3093,10 +3085,6 @@
     ],
     [
       "p",
-      "f90aff52481fb6b05f7f17829121084ebef98a4648680fbffe1c322a184c7c7d"
-    ],
-    [
-      "p",
       "c8bc78e8ea010103c0bd7dca697d7460780e232229687277b37855744ecefdec"
     ],
     [
@@ -4442,10 +4430,6 @@
     [
       "p",
       "ef948af652e70477b75f2d7debce3bf975589ea7d5b321a6fd4f42c953746b7a"
-    ],
-    [
-      "p",
-      "f38f878fada4877f114ace303127dcb5dd54c0e7e8f877bad25fa507871c3380"
     ],
     [
       "p",
@@ -6798,10 +6782,6 @@
     [
       "p",
       "f518743ce9a3bf6e9592f4abbf62ce7ca5c95b8fe71234f2a489d5bc2dd1e98a"
-    ],
-    [
-      "p",
-      "7bb77d40a10347e7b1fea34403c9bd6761f756ec2a394346dd0fbeb0b0f7815a"
     ],
     [
       "p",
@@ -10086,9 +10066,17 @@
     [
       "p",
       "7bc7bd5b4cb6d73d6756d5e62ac369f5e86935150b2d2755eed03c519e0294bf"
+    ],
+    [
+      "p",
+      "67514144ab0069a89694f04138733094bcad917a431bf3cb8ac58809cfee2666"
+    ],
+    [
+      "p",
+      "0f19e247cc1c1bd506d3eaf7439faa34c504635fd300f6914a57dc8ed6329045"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "61f5a2e2b7e312fe43628f6bd352658b2acf277b719dae84c10b8e9b08a61cf6",
-  "sig": "cca33cbfe7a40cb92950c9b105a311c14d0390c1e0acf3b0250af74e14207215bc3226045891339cb1f2a6a7ed4f2cd177cbc43a0245ce06ea05135ddec2e835"
+  "id": "7f5773094ac203ccbcf3d8dc0ae922ab06e7dbc95ace9e647bcc0f161dcd5a70",
+  "sig": "e5f9d1970ce70b8e03e760439b34cb0106da1a77c33a7213514e11ac345d6cdfbeb32dee7acb2cfdc31f429cedf84b9237b075171c8bd7d76c29b9d8e8a4493a"
 }
