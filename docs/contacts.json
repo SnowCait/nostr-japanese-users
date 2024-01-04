@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1704383438,
+  "created_at": 1704384867,
   "tags": [
     [
       "p",
@@ -2033,10 +2033,6 @@
     ],
     [
       "p",
-      "ccc51d08d1b61f06fd9b04ed09b74d547113aa4b292ab8f50901106d9035aa1b"
-    ],
-    [
-      "p",
       "6ecdcfffea195ff58da2fd74af9f47f1a89e17d0d36d0c33f3d20b2f7336c272"
     ],
     [
@@ -3346,10 +3342,6 @@
     [
       "p",
       "a7f9a53d154aececa2fc253f3be9ae75bfdb9dd7df8d0e47133bf949d55a2c52"
-    ],
-    [
-      "p",
-      "71963cd8e81c8e3838908055dc07d4469ec77538444d8d97e5e7b87282428bb2"
     ],
     [
       "p",
@@ -4673,10 +4665,6 @@
     ],
     [
       "p",
-      "8ffdc9f5a6f575b2810fd1ebd17b4686b2a3294b62838b8f320ffca90e517708"
-    ],
-    [
-      "p",
       "9b0603573c12ae9cb5625c17c5fae884b6ea0e49fc3082dbf8b4809867a5398f"
     ],
     [
@@ -5553,10 +5541,6 @@
     ],
     [
       "p",
-      "defb374d76ba9a95bc439541f5eb21b5efc7b78678af58098ceb943bb29906d5"
-    ],
-    [
-      "p",
       "2dadc402e7fcbc6733b7397151149155349007647550a1dac2706f32b1671b5d"
     ],
     [
@@ -5889,10 +5873,6 @@
     ],
     [
       "p",
-      "b26822c5119076204f1ca0114ffa0549644b09c9e1f4ff5cbc607941184f7132"
-    ],
-    [
-      "p",
       "d6cd2ac764f08189954d9a1832c4166eef4c9ca96e572e9f7f7667b4f3cc3bfa"
     ],
     [
@@ -6018,10 +5998,6 @@
     [
       "p",
       "18aa2eb9e84956e19df84b8c3132f998f78fd4e257b6f6118a9819372d9fa507"
-    ],
-    [
-      "p",
-      "94b12145463e5455bb3312486c7ae44a2296427cb13b9423742d0d47024cc976"
     ],
     [
       "p",
@@ -7162,9 +7138,17 @@
     [
       "p",
       "bbb0ce4d51f99ef3ae2e23bf49ffd568b7caf29abaa472fb0782f29537d41710"
+    ],
+    [
+      "p",
+      "95dc9affb0e0f105d644ec8b8e219e9ffa6e35f55bbab1876e83a415db607476"
+    ],
+    [
+      "p",
+      "7bdef7bdefa3a9fe7e3b1e8892f2d2410a4cffc6ca0a4c28822870d98e5ce012"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "909d04e2a362a38897b72f3c8b3468df5a282bc6f1c32668ab69e9e8b40e4553",
-  "sig": "763aeda1889a763f0dd6cfdf4a7aaf364d4a88fa67f1acfc88b00c46b5daa116e316075b1d1c34f6a772242fb190a1d369c35f0128242b1424c0c81b5efb7813"
+  "id": "aabb80a84318797feed78171d7cdb0a080091ba4069db614bbc5137a33fabb1d",
+  "sig": "df63c4cfd08cdb2b278699c0c564c7dd54a95bbb3590513b18ae2247a827188acbfdd0b8f65d6995c63adea284abd7524b05aaf36cda2a07c4b124d5df826218"
 }
