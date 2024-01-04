@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1704376230,
+  "created_at": 1704377479,
   "tags": [
     [
       "p",
@@ -837,10 +837,6 @@
     ],
     [
       "p",
-      "3ed3c5bb07434aa6469f2f31e70c1f36683f66a3b0cc9343c8fd49972cbe5ec4"
-    ],
-    [
-      "p",
       "95dc9affb0e0f105d644ec8b8e219e9ffa6e35f55bbab1876e83a415db607476"
     ],
     [
@@ -1390,14 +1386,6 @@
     [
       "p",
       "dc974c4e0c1a9f88fc47361c0d145f5599e9c15535b98eb5ebd67f3f54ea09fd"
-    ],
-    [
-      "p",
-      "414817d761c37aa79cdc98c9bd9583e32a1f9cabb139fd3054bc56c0be6c1921"
-    ],
-    [
-      "p",
-      "12c49c8d2b2a6448af531f457e048f04398cb36d8608706cfc0d6395ad4bebd1"
     ],
     [
       "p",
@@ -7233,10 +7221,6 @@
     ],
     [
       "p",
-      "12990c387efc385e9acb59a6def15c0628b263503e021dfd7b7ef60d290cb93a"
-    ],
-    [
-      "p",
       "daadb8ca40d15893ab40ae9fb0824c348194ff6ace61406d74907abf3482fdfc"
     ],
     [
@@ -7298,9 +7282,13 @@
     [
       "p",
       "816a2f808f5d146be1c11cb08122e379a291e72a0ed65068b448de25158e0f63"
+    ],
+    [
+      "p",
+      "bc5c13cfbac494671f2a2fb723f9441f610f2408236ac60669963322316491ba"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "9d954db3d3feb262ff4ec537c914ef249d8788204f4c89dbb2380f4a4bb3e496",
-  "sig": "e5d3009dcd075828ed3c3c23ec6a27421ee65c440380631d07540fa07957d5b5a4d839970d8c2d179426a6349fede8f28d2ef29743d5a6a948436b1cdd221f81"
+  "id": "db9ece2c6b64a9b7738b33f9b7e6676a836a2d593776596231623a97903c3199",
+  "sig": "000d806dd63319742a043e320386e56ab8d74e4432b1d9adc3b063a841b8e5d82cdcc72132b846f135ff689d98353abf5ceac4511c1e154763aa1ff4d4531de3"
 }
