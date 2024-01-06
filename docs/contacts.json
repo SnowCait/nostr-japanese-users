@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1704556226,
+  "created_at": 1704557616,
   "tags": [
     [
       "p",
@@ -458,10 +458,6 @@
     [
       "p",
       "ce65ce3bde311f31304b3b01369458464f7db9dd8b36606a6d2f5180cedc6dc2"
-    ],
-    [
-      "p",
-      "62e672604604a0f65a6cc3fceb0435e0c96b34040a9e889f565e9e211082f7c1"
     ],
     [
       "p",
@@ -1206,10 +1202,6 @@
     [
       "p",
       "4d432026b5012942f663bd37d0e41eff3d9f39dabf6a89e0bdeda4a351a97f4f"
-    ],
-    [
-      "p",
-      "b0ff018f158d5e1153c66f8bacae81ac687b02ee291b37cebbe6e96ddf147b31"
     ],
     [
       "p",
@@ -3329,10 +3321,6 @@
     ],
     [
       "p",
-      "1bbfc3c4c6958ada8c75558a6e28604b683bf4a2fb8d44037ec353c0f313fc60"
-    ],
-    [
-      "p",
       "ef2ea5d0791b8302dcbbda0d6414fd75203cb4bd90f01c4616378b0ed5dbf7ae"
     ],
     [
@@ -5138,9 +5126,29 @@
     [
       "p",
       "fd43eaa93b44226da832c733bded8651f2ef2b81b965de254155612c67be572b"
+    ],
+    [
+      "p",
+      "8aabb9d25a3e169eca4dd1b8b2eb074ec4f5706d277d7ce0552ce212a11a8706"
+    ],
+    [
+      "p",
+      "ca87cac008e3c02cce4098a8da8444ab834629783f2d12b7acfd13e1f9a34140"
+    ],
+    [
+      "p",
+      "0287ba7ead8486bb5058246cf96c8f0d7b046be271ac56d20bd3929c13b4ec51"
+    ],
+    [
+      "p",
+      "e24ab1d3029053e807dca4a0cf2412d2ddee0128a3aba12149036b5d251d97a7"
+    ],
+    [
+      "p",
+      "e01b12566090b091078089df5d51c53a5f74022efa56010009e2e1f9b545f482"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "e77e08555161b17248af6497b77b6e8174f3832bbc261e4f97ffc2b8957e66f0",
-  "sig": "0083362f2749e50525af7e9564804661afc5f52b264a50f8ee53fdac2c99f8972b2bc5a9865fd406dc61d6c6169d6185710f5dd63d841c209380a313e58cb2bb"
+  "id": "d504a6873abba10f37f0c0bb98dea8c17ef7631bf2bd8bfc3853c0a9159c7ea2",
+  "sig": "0991ca2fe59c31460b52057b73d499bd5e512699fdd54341dbe188c9a64046fbd8cbbd00d14a9e1f534c2447dd0408fc0d1ef1222dab93b31c002e718512f483"
 }
