@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1704869431,
+  "created_at": 1704870700,
   "tags": [
     [
       "p",
@@ -1905,10 +1905,6 @@
     ],
     [
       "p",
-      "69fec203906a1ad2db120f2e6deee4c9c04fbcaf09a596d474799dac8880b010"
-    ],
-    [
-      "p",
       "5e3273b114da53a3fd914461072e3c0a5642d600d0cf7a804d5d38654d11043c"
     ],
     [
@@ -1950,10 +1946,6 @@
     [
       "p",
       "b0fbc856f46f1f98af4a6cbd2e3ff6fb6cc9667ba4b30c15f304ececa5c1df3c"
-    ],
-    [
-      "p",
-      "7d7543186225119c7d5931f3de56a659ee22240a67572fab93edb607890fc149"
     ],
     [
       "p",
@@ -3337,10 +3329,6 @@
     ],
     [
       "p",
-      "c9a58ba53c4287c4939ed71a7e31cb21bd13d2ff4bbbcc985455f25a7a20e636"
-    ],
-    [
-      "p",
       "3349480abac88c92610a8ecab9e18c0c6ed7177db52feb1b365b918d3698795a"
     ],
     [
@@ -3954,9 +3942,17 @@
     [
       "p",
       "e549b435c56c92e6a9bf1cc30e577cd60a33a81b5046b183a302493713a5720b"
+    ],
+    [
+      "p",
+      "f96fbb3ddd4ba9c88794ae83e98450999d7a96777eedf8f59d0f316df20213f5"
+    ],
+    [
+      "p",
+      "29ce40db68c00271b8b9412695ce355a306a4b7907fbc74e0547d0c45047f414"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "48c7600563117c43361d60b0f98ee4194fd9d70b494e1452131296c630168d22",
-  "sig": "fa9f22f7aef839c253c0fb24aae9e1bc313f1f7537cb02363640624b11fe81563c6f5f3a29ed1e589ca3302242271880402282b9fbd4e4b6545254f5bef763f8"
+  "id": "2b9469e064a78b782a8fae43abce00012e7eb892a8f6b5ae62fe9b7352a35de6",
+  "sig": "286033c04d0e52295342e967c1d50df8c0379d08e807cecd11140b192a06a4a2811e3d5fa9b45e99ca75d9315ae22b973142ad9504b7cb74a8a208b9f05f1856"
 }
