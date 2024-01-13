@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1705173000,
+  "created_at": 1705173635,
   "tags": [
     [
       "p",
@@ -2913,10 +2913,6 @@
     ],
     [
       "p",
-      "e1d62c126d8991a45d9800d281783dbefd923e132744abc4e7195279809c3a87"
-    ],
-    [
-      "p",
       "7e174fb6c8509cd62ce20cc847dde2dd4f23da4b7f433cb6431fd79c7d9f1f6d"
     ],
     [
@@ -3738,9 +3734,37 @@
     [
       "p",
       "85563bdf8b7ec25abb0393fce1d6860fc2aac1237e00455a45b6e7c8717899c7"
+    ],
+    [
+      "p",
+      "cfdef0fb71cc56e5dc4a6a01336d425d300f20887c069102a668580e59cecf4b"
+    ],
+    [
+      "p",
+      "7bb77d40a10347e7b1fea34403c9bd6761f756ec2a394346dd0fbeb0b0f7815a"
+    ],
+    [
+      "p",
+      "c56575fbd8fcc57373b275874decbacf7221081ffef729ed1ff0784ce7ef8cdd"
+    ],
+    [
+      "p",
+      "443f5b2af316b4d4692536fd22897bb4ad820566d0866915c0ba400c73a7843b"
+    ],
+    [
+      "p",
+      "18aa2eb9e84956e19df84b8c3132f998f78fd4e257b6f6118a9819372d9fa507"
+    ],
+    [
+      "p",
+      "49d7bd46dff2745598e5905e4a8fa6d91fa1d51ac90b1040b27e705a073d8eef"
+    ],
+    [
+      "p",
+      "f0c6e61385ea22bd7a31e62bc16c00a6e27d732380106f65dad01e0979a5db22"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "da921813d3474ecc6a222f9a0e56c7e9c4789b165ea9f22eed22d083ab739667",
-  "sig": "853e6ccbebfb74aeb9b36a9f6464ff404fbd74d96d11f034b43e0fe8ec3359d8c127a7dd554a14406f821ecd4711ee71065147ee7455fde654d033cb4556c13e"
+  "id": "fa516c245b981d46c7d6523ba62bed9ed43d36dd052aa56e1a99f30e88b3567b",
+  "sig": "c64701bc44756d95239afa09afff8d97bdbb2b6eef084d12ad10b28e9f0b1f9b938eb315d59b24e840da8b3edbbed662ae5d46c23f82aba6ca815bba64896438"
 }
