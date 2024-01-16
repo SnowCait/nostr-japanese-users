@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1705440207,
+  "created_at": 1705440966,
   "tags": [
     [
       "p",
@@ -2349,10 +2349,6 @@
     ],
     [
       "p",
-      "fdb789242b61d3a5eebb6e42862dbed482cb12ca9e332d5fc308fa5e996c4cd2"
-    ],
-    [
-      "p",
       "86d61c5db9bd1274ae645fcdd53606da7b44127d0c3e2ece6d5b811df575e192"
     ],
     [
@@ -3237,10 +3233,6 @@
     ],
     [
       "p",
-      "13f14695fb06c8c02fa5406b7c9c784541ddcfa34e076267d629e6063f24bd79"
-    ],
-    [
-      "p",
       "0d82a6d9926067b190fff485063a55e4c63b1c6f39a45b22d67e50d38d1b7ddc"
     ],
     [
@@ -4049,10 +4041,6 @@
     ],
     [
       "p",
-      "6a08fd8f91306dddd63d57948800c4e45ce0e5b3a248f9d8e759b224422ebc72"
-    ],
-    [
-      "p",
       "feb13fed26fe1c47ff70f7fe9e542de921765a06954e37c6374dcaae88f569ef"
     ],
     [
@@ -4134,9 +4122,17 @@
     [
       "p",
       "96131c1ef871da86c4f099496b11c353e6dc3d3554188ecbd0d0ce6179c98cc4"
+    ],
+    [
+      "p",
+      "3d1ef6ecee9a732e06385ab4e8a05b1c60d2da1665465ce8c72bcc4dea767cf2"
+    ],
+    [
+      "p",
+      "f1d3bc459ed0c1cc69ea7bc3a22ad6ab3b88674ee0669fd7d51a708a82aa0d96"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "28fc76dba41d11787334a0d04d3cfa862716ad512a1018263fdeb9c90ef54bb6",
-  "sig": "8c79cd8d2a3fa7615d23c0975583baf2f92ee93405494da4470d2c7e3a9981e2a89b4b95df36b4213f8e800d6bacb2effc102cf7de2809512be6a4d7282960d2"
+  "id": "c52efa1e9bab8773ae9d665aa823a79e842aabf01e531a68918e8ae162e143c1",
+  "sig": "88a83c7aee2dfc7160ae209b96fa494c2144eb4fd76cccef7ad0f2150892396f881e5ec1ef926d499ab85365f9731a4696406bba920e6e274b90af4ec3e11e05"
 }
