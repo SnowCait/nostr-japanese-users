@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1705434641,
+  "created_at": 1705436002,
   "tags": [
     [
       "p",
@@ -2045,10 +2045,6 @@
     ],
     [
       "p",
-      "feb13fed26fe1c47ff70f7fe9e542de921765a06954e37c6374dcaae88f569ef"
-    ],
-    [
-      "p",
       "5ceca54876632dc98048443b75cf0722481a386555c5de1015bc152fbe05a66a"
     ],
     [
@@ -3705,10 +3701,6 @@
     ],
     [
       "p",
-      "6a08fd8f91306dddd63d57948800c4e45ce0e5b3a248f9d8e759b224422ebc72"
-    ],
-    [
-      "p",
       "c6957e0b865695af41417edaf3db342aedfb77b9fd8cfe2a380447eb7c2571f6"
     ],
     [
@@ -3925,10 +3917,6 @@
     ],
     [
       "p",
-      "21d1d803cb7b3b4220a8f16758fa087f5dd074cc05cca641502ab88ed5ca8bac"
-    ],
-    [
-      "p",
       "547994b49353f4b33af366b5d3a6678a7e115eccfb31627edac3fb62e7d38626"
     ],
     [
@@ -4118,9 +4106,17 @@
     [
       "p",
       "31e6b164f45b308ddc97dace9306542f2d76277327e4064f13f5d8f46a7ccfe0"
+    ],
+    [
+      "p",
+      "443f5b2af316b4d4692536fd22897bb4ad820566d0866915c0ba400c73a7843b"
+    ],
+    [
+      "p",
+      "9a7e49b4a9b1c43fbd548569a96c042dcd4d872c9dd15c48f0289754dbe97f03"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "9b5e182f76b3776089153d507c6418b788c38b5a8e9c9cc9ff491991f9f8036e",
-  "sig": "9b6a02cf14be433de7bfadc402aa5b2fc16655aa0cad43b1dbfca9a23568ecb9d7cd1aa055e0845c8e036a3e14b77236abba61f64248ea1768655cb720e8be29"
+  "id": "6a09cdcfb696a1e88f57cc60afae71fa3f880db14c40c8704f695fce01284b29",
+  "sig": "ab58b608b47c0acb344d4de6536e24054c3b9be83709c59b3e370171fbe310957f7ed9f02945ed8ec5e32b825e8fc04d541dc965aa18a34fac173f5bbabeee13"
 }
