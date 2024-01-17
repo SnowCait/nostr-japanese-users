@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1705481437,
+  "created_at": 1705482789,
   "tags": [
     [
       "p",
@@ -2361,10 +2361,6 @@
     ],
     [
       "p",
-      "ff22f54dbb754de2b247eec3a89c0ef5fdf78e52abc6227748e34434f7ebb360"
-    ],
-    [
-      "p",
       "34a92f5fd2d749f7f389bb4d7a6fac8e1882bbd2c58f82ef920c2e5c51762d2c"
     ],
     [
@@ -4186,9 +4182,37 @@
     [
       "p",
       "a3a9d3600ebf527da49eed4f482db95296c777b7a27d3553cc047df0360c7539"
+    ],
+    [
+      "p",
+      "e489933da11a6bd7f00f8bf3f05b78621030ca05e3d2d807e8062fb7919bebf4"
+    ],
+    [
+      "p",
+      "e27984a63e865850a04430ab2c133a9cb3defb019d9b93e9dfbbaea89c3508d2"
+    ],
+    [
+      "p",
+      "a68d8d7c3b5f2278f903c950c274a1e946343cd4f241157e5440033f2962b3b1"
+    ],
+    [
+      "p",
+      "7fec6938dca000bf2c7d912e532ca09ce7f4bd397678ccaa4809f78eac13f528"
+    ],
+    [
+      "p",
+      "272cb7f685fb37d255f37458282c6e0a30d93e0e629b9751a00a1ea2ac84ef84"
+    ],
+    [
+      "p",
+      "fb6f7dc2cce9fd123ba9f80a5b98a0b3809618dd8d49c338053c95343c92e239"
+    ],
+    [
+      "p",
+      "511675e87c4b794e5ab8c8ddd459e3a004522239dc175367f1db0e1b91a16b1e"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "9a59a9b8767ebf49a3aefe85e0eb60dabd4f5e1e8c590bdb689db6f5a2862eaa",
-  "sig": "33363a6d6abfeb3aebaa560d08d2688c8db15b98a9700c6fe483ef1e263d72921b0a84db92faf1efb1170b98081ffc82d8c1db10eab8a53ac511aa6cf2813788"
+  "id": "42f8a58cc50495f8c6899b0811c2097dc14ed5b6df4711a956766e35c3e7e801",
+  "sig": "7011c1be096b5556daf592bfb7006fff735690b441120d4e1b3a574f67a5f7858b22c274c1b2cf49a88bff77f8099b2f1319306fa0ec650dddc8818c16bbc239"
 }
