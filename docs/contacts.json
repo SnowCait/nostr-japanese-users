@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1705847744,
+  "created_at": 1705848626,
   "tags": [
     [
       "p",
@@ -2201,10 +2201,6 @@
     ],
     [
       "p",
-      "3e20a6ad656c01d9710d34fbf90129dca55b5819be75afad8ee534d9e93e33ce"
-    ],
-    [
-      "p",
       "4bf76b0c9db37b6bf94e022b0f766c39acc15f5250e9941a0a43222782649b7b"
     ],
     [
@@ -3865,10 +3861,6 @@
     ],
     [
       "p",
-      "cfdef0fb71cc56e5dc4a6a01336d425d300f20887c069102a668580e59cecf4b"
-    ],
-    [
-      "p",
       "97e508a18c95ab21c235365494756705ab2fa45327d7b6e5ba44fc6fce1be5ce"
     ],
     [
@@ -4258,10 +4250,6 @@
     [
       "p",
       "215b2cbbd0589f13fbad2a39d4ecccde8e32dbcd7a635ac2dfde4cef2d937c87"
-    ],
-    [
-      "p",
-      "ffd8cc536f62675baf30bd9f6e5b4ea58183118d4f1d1c6d037fb529226f49ad"
     ],
     [
       "p",
@@ -5158,9 +5146,17 @@
     [
       "p",
       "f96fbb3ddd4ba9c88794ae83e98450999d7a96777eedf8f59d0f316df20213f5"
+    ],
+    [
+      "p",
+      "388b979cf6061c4ab1f939fd20473f10eb993f275689ad7d6bcb6ae6668f3cda"
+    ],
+    [
+      "p",
+      "32343673698eef39571b13bbfe169b5285291596d63f5881d9dec2dd94739ec8"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "27d1b43e4b2df807fdc301810a760befac3e5b19613778ae0df4fa9fa384c451",
-  "sig": "f751bc6b29b25b02217414f2a72072408202aaeb36d2752def6a1e4c536d1ecae74eed37c5bbbe24117d6ecad31c6e1095ac84560fb39a225d384f9bbb930584"
+  "id": "ab8f15d6ee282d2d479dde958ada2119bf408c1aa7bdff2ea5064d1baa892388",
+  "sig": "89c5bf9da44842de121bc0dbe858228a028d8229afd80f526124f7fe7327796674158938bd062300b0e2160541e0aa955d34ff50ad17bbd616ecb21401fdb69a"
 }
