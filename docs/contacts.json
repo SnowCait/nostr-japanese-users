@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1705804529,
+  "created_at": 1705805495,
   "tags": [
     [
       "p",
@@ -2281,10 +2281,6 @@
     ],
     [
       "p",
-      "5ceca54876632dc98048443b75cf0722481a386555c5de1015bc152fbe05a66a"
-    ],
-    [
-      "p",
       "feb13fed26fe1c47ff70f7fe9e542de921765a06954e37c6374dcaae88f569ef"
     ],
     [
@@ -3749,10 +3745,6 @@
     ],
     [
       "p",
-      "ff22f54dbb754de2b247eec3a89c0ef5fdf78e52abc6227748e34434f7ebb360"
-    ],
-    [
-      "p",
       "72a997a5f37278af7db0f26fd5e27f46327ac6a898ba6a6d7fe7ab7a9b6b64a1"
     ],
     [
@@ -3818,10 +3810,6 @@
     [
       "p",
       "6004f31973f1fa1cab7e4a026aa317fb197e298cb53f0106fffe0e2696bcf1bd"
-    ],
-    [
-      "p",
-      "447bad587c3b12aa8716bc009a7bdaf9cac5ea147d638416acfaeaab56c30fc9"
     ],
     [
       "p",
@@ -5082,9 +5070,17 @@
     [
       "p",
       "d6c1ec29f6569edaf54f594159d370d839bc9e2b5c1660ede71fff0791b99d5d"
+    ],
+    [
+      "p",
+      "a81ef469720fd565bfc23bb417491327a065d703670fb0e09706392942f5b94b"
+    ],
+    [
+      "p",
+      "0287ba7ead8486bb5058246cf96c8f0d7b046be271ac56d20bd3929c13b4ec51"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "afadf0d668c122f0cd6abd96bb0baf206377b2e4eb0240638f619c3948e6ee6e",
-  "sig": "72bbdc2af9680b3bd5805bddc9515951b08127617005aa57abd991c3420783370afe9833ca0e008a792f5db328835fafcace7530d06c07e288376945d40102e2"
+  "id": "5d6ec06cee793ac6b193be03959005255cd640079fc5f3787f149e76b3715c8a",
+  "sig": "54ebfe3a99c1dc2a2e671f1617fb88342a085db6dbfce1e02d038717a3667100c73b664d1823aa11e5360c49735da32a3bf213c9c11f9f3e748027dd6fb09523"
 }
