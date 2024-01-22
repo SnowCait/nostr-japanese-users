@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1705900360,
+  "created_at": 1705901403,
   "tags": [
     [
       "p",
@@ -1833,10 +1833,6 @@
     ],
     [
       "p",
-      "3c60539e17b088f177dac54589970615fb22e7e400cb32a76746b7f7f7ef81dd"
-    ],
-    [
-      "p",
       "0a19acec16bed8ee06ac9676295c7a8194636b4504498e6cfd7790f6ca127b6f"
     ],
     [
@@ -2634,10 +2630,6 @@
     [
       "p",
       "3c181274393a439303c51d233d7eed55cbcc14b64d8c87480e3dd66dcc8148ce"
-    ],
-    [
-      "p",
-      "b1cebd37aee243d6cc48aebde51360e2b65722d358825a9454a6906bff9d2252"
     ],
     [
       "p",
@@ -4489,10 +4481,6 @@
     ],
     [
       "p",
-      "f518743ce9a3bf6e9592f4abbf62ce7ca5c95b8fe71234f2a489d5bc2dd1e98a"
-    ],
-    [
-      "p",
       "7791b8d311f8b978f7d2e27415ddaf46ea9b50abd52f7be6baa5796a3e0425eb"
     ],
     [
@@ -5041,10 +5029,6 @@
     ],
     [
       "p",
-      "aee891f8e93f646e2d561eed8d0fb9d40703cbcc06fb9113e3de6e58a1bc5aeb"
-    ],
-    [
-      "p",
       "8be6048eaa80a710e92909bce4f98157923a2b27fdb7d604481f4506d863a88b"
     ],
     [
@@ -5190,9 +5174,21 @@
     [
       "p",
       "9e6db7b6481ca3c4ba82ab6a48871e2fbd95ac658b4f7dd7fae19ae9336d8293"
+    ],
+    [
+      "p",
+      "bd2102b73e82d6c752ff7672a429d44937320e1abc1dbe1f5c21d682fe2c9265"
+    ],
+    [
+      "p",
+      "12990c387efc385e9acb59a6def15c0628b263503e021dfd7b7ef60d290cb93a"
+    ],
+    [
+      "p",
+      "dbbcad0ed779526301c75cb9399cf4423359feea21010724981b19c03198aee6"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "39f99e8d41b370afb9b859b81f0e0f0aeaaa5c7e66e8870147244b8c510aac89",
-  "sig": "d407153499c396628610be3f6474274f546a9a1a4cd3b7fc900af6345f3dc4de3a18e082e7940dec5039559c55cc7d6ac050177d26145515326216d0596f3f82"
+  "id": "6bf577b813dc25c455de9a9bb61b2e1224e7ace30c7b28b3302aa49332f404bd",
+  "sig": "2825e2ae4244ce791776a7e93e453c80656637be4fbd2960625dbd0e7c0442bc86b6e385cda40ce7ad6620cee3433fbeb8df58ac17df801986e127f434d4b629"
 }
