@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1705998744,
+  "created_at": 1705999372,
   "tags": [
     [
       "p",
@@ -3301,10 +3301,6 @@
     ],
     [
       "p",
-      "0287ba7ead8486bb5058246cf96c8f0d7b046be271ac56d20bd3929c13b4ec51"
-    ],
-    [
-      "p",
       "3bab894a1a1d48fc4bf6f955017e3965ab5c0ceb382c7859c53596a63cc77f3f"
     ],
     [
@@ -4313,10 +4309,6 @@
     ],
     [
       "p",
-      "3415211216325781a1a7645b2e7697008074b551a0f07c1d8f678131b911e296"
-    ],
-    [
-      "p",
       "16f4f3567ed83a9cd8fe31aa8e0516ba1e04622951cf183dab1eb21824613098"
     ],
     [
@@ -4701,10 +4693,6 @@
     ],
     [
       "p",
-      "cb8ea19233eed8c858b185f962ffa9aef8ee98ea46d30e0a7c9defe01c4cbaa9"
-    ],
-    [
-      "p",
       "d88190b832f2b80a65181c0c849e0d15e24e7c3a6d869bf72db0050a41dade2d"
     ],
     [
@@ -5078,9 +5066,17 @@
     [
       "p",
       "c8bc78e8ea010103c0bd7dca697d7460780e232229687277b37855744ecefdec"
+    ],
+    [
+      "p",
+      "fdb789242b61d3a5eebb6e42862dbed482cb12ca9e332d5fc308fa5e996c4cd2"
+    ],
+    [
+      "p",
+      "106af487eca6e7c9adcaeb3499fd27e05340279fda5fba1d94a48ac301e5e5bb"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "e8c466b0424d132703303e0f8b27672472a281d945bc26e2a7541b55140c3465",
-  "sig": "4a38c12826d7fc29db572636b8f019407966c251504170bf2c0ab1d342d2f864ab90ebefe2b52a47cfa6e334c18c5e26dc84c573bbb5afa612a496e7294eb532"
+  "id": "f11806118879af4da9043994a9bc728f2204510f40da25a4dc7535d760ec6c0d",
+  "sig": "294bbf7a2ec6bad201beff7ca14658f0b46b6f02e6175d230b5bf6db10bf4a338d013647347c925ac12c86911b988e6f1abf839617409a49427c03ff7331d46c"
 }
