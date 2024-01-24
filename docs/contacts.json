@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1706116303,
+  "created_at": 1706117320,
   "tags": [
     [
       "p",
@@ -2001,10 +2001,6 @@
     ],
     [
       "p",
-      "eb0b2b7c6917aa2243c5a9d02cab58dc8928e27cf28a05ffd9f2016a706f1b34"
-    ],
-    [
-      "p",
       "6fccc97061b982861a139df16742a02dde59384316336a492edf86d8d48cdcb8"
     ],
     [
@@ -2534,10 +2530,6 @@
     [
       "p",
       "6f73eb4283900dc70b530e8ba7f473991ac4968b218e15041c601231ac7f61c8"
-    ],
-    [
-      "p",
-      "8f6fd092c28bc173507338e52d8657d0546fd939fdfbfac77c3d353140fa9400"
     ],
     [
       "p",
@@ -3510,10 +3502,6 @@
     [
       "p",
       "95dc9affb0e0f105d644ec8b8e219e9ffa6e35f55bbab1876e83a415db607476"
-    ],
-    [
-      "p",
-      "ad2fa542c1e89b5abeb5b292fd840227fdee89fd69a6b77eb1a882364c9aea5f"
     ],
     [
       "p",
@@ -4806,9 +4794,17 @@
     [
       "p",
       "272cb7f685fb37d255f37458282c6e0a30d93e0e629b9751a00a1ea2ac84ef84"
+    ],
+    [
+      "p",
+      "59bb382f78e4c6bb0a8b06ee52abd82b6be528e2c41af4734cda60ddfdd517b8"
+    ],
+    [
+      "p",
+      "c983b123b424e24fcb4fe9533ba3f0dc50ea2214703e6e94759fd249e522f912"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "2eb89b6435aabfd4dc06c668f53e23cdee45199fda22d3e8f7a4ec2825f90ea3",
-  "sig": "6397409b10e2648114a34556063dad247dce3be20e611b8f539ab32b3e01426c2fc4a505fef36b42d870977ac4d2702701b81662bda0c3728c0e79ff037df337"
+  "id": "157867933f24f81f624d7a7e70608db99b8320f2dea9cb6ec500f16c67f1ad42",
+  "sig": "3fbcdc51731adbf0b08d1caedc36771632f21054c93b35c4af88e2bb11e905784bb7179aa411e1cd064c9b1cf0b3bca906dc081cc5133c5c07940103d17732d8"
 }
