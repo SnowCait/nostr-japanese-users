@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1706193559,
+  "created_at": 1706194222,
   "tags": [
     [
       "p",
@@ -1518,10 +1518,6 @@
     [
       "p",
       "3358d954eaad6b98d76a201e38f38a23a7fd934068847493788ce2ea1584f2d1"
-    ],
-    [
-      "p",
-      "d6ac1ae56dad9d1f07c4bfe89b9258f88257d530e38b2c3a7efec414ad8915de"
     ],
     [
       "p",
@@ -3773,15 +3769,7 @@
     ],
     [
       "p",
-      "6acc8ae8a1a7ed35471d17c347e5358b7fd46658142f40dbd8d6e21f957d0539"
-    ],
-    [
-      "p",
       "bd60934e084aa21bbb9e4f195e0e6123b9cc21061735ed77ea356131acada4dd"
-    ],
-    [
-      "p",
-      "2473536a6e2fd20bde6d6b2df4231649b64b66b53d80b8608780462475b05ec0"
     ],
     [
       "p",
@@ -4221,10 +4209,6 @@
     ],
     [
       "p",
-      "74604f6bfa071f3bd852fefc5176614f80029e6a92517958b5fa71931c3f84b6"
-    ],
-    [
-      "p",
       "8cd78801395035dffb30503468b496b289756c8bfd9809ecdcad1f4640b6ef3a"
     ],
     [
@@ -4294,10 +4278,6 @@
     [
       "p",
       "b8d0e9250d1ffbfca5e8c904fe80bb0f130a9e11fe8ed8909c966d78d2e34db5"
-    ],
-    [
-      "p",
-      "2e4cfd2f9e8b632a5d7bce9a00ae888c9a4e3b567ca01d0161d95500fe146e7a"
     ],
     [
       "p",
@@ -4706,9 +4686,17 @@
     [
       "p",
       "ff6af774ef06d8820599be989c67f07cea34d1cda46d27c658322405a9f87eb0"
+    ],
+    [
+      "p",
+      "bd2102b73e82d6c752ff7672a429d44937320e1abc1dbe1f5c21d682fe2c9265"
+    ],
+    [
+      "p",
+      "a81ef469720fd565bfc23bb417491327a065d703670fb0e09706392942f5b94b"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "cd5bbddd69f717d3c5af68b3c31882c6f5be10909392f77ddd0d459cf88914ff",
-  "sig": "0e22071e14a35616af59b4acd96d0a152dd4feee69c465b6e0879da9fcfcb04cf4d98c0866fe2658649e561df2d736281158c08c9535367807d5a5b50c319e92"
+  "id": "8c40add2ccaadd40ea8ae121fba3c8c1945fcf984c3a7758b36aefb0a9088280",
+  "sig": "4538e1500c7ec1f19a118c829d34e5dc4a85faa5e0d38f9eb92b68ceb710ed6ab2cf8798ef90596854552a95cdc5f29aa876bd2e0ce4e5a2da8bd8625db972fe"
 }
