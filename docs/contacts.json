@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1706176219,
+  "created_at": 1706177584,
   "tags": [
     [
       "p",
@@ -1813,10 +1813,6 @@
     ],
     [
       "p",
-      "289b76ceb53883d59befdb315ea773114e8f6b5342e8b9cd49c0772802b5308b"
-    ],
-    [
-      "p",
       "c7fa46395014bd0090167a39338d489558b4cc9b15d61e8782f498fc251c20b7"
     ],
     [
@@ -3281,10 +3277,6 @@
     ],
     [
       "p",
-      "719301119f41dee5b92d2437e0787c83a403bba7b1336ad481560ae70f279ce4"
-    ],
-    [
-      "p",
       "8faaa1063b85e89be748f28147265cf89c4ddddb30ff1c28233640a865902b17"
     ],
     [
@@ -3534,10 +3526,6 @@
     [
       "p",
       "4ce70dc723a7549ed8733f5213e835a861d16472813cadaa7ffe54f1e24a75f3"
-    ],
-    [
-      "p",
-      "322ea92d171ab8e8173083ada5e7fe77034cdf81ba3fa4a669e35a684cb3a7a9"
     ],
     [
       "p",
@@ -4022,10 +4010,6 @@
     [
       "p",
       "3c62e57d352dccfbc85e43fcf0408ae8680c7e481db560cf4dd87ebfa93d63a2"
-    ],
-    [
-      "p",
-      "d4d5e0183aae22476f33911d2090d14e29347c018d1b3e4ab18f72b375299517"
     ],
     [
       "p",
@@ -4722,9 +4706,25 @@
     [
       "p",
       "bc2c7c0e44408dbb64ab1046b4e0da5a81dba368c8df38c9f729c57907eb4424"
+    ],
+    [
+      "p",
+      "6a08fd8f91306dddd63d57948800c4e45ce0e5b3a248f9d8e759b224422ebc72"
+    ],
+    [
+      "p",
+      "cb8ea19233eed8c858b185f962ffa9aef8ee98ea46d30e0a7c9defe01c4cbaa9"
+    ],
+    [
+      "p",
+      "908a6fc9432ac67f9796bc4995743c4395103f7f5327aba1e87f1bb90e943de4"
+    ],
+    [
+      "p",
+      "3afa9bf8de1bc112dc0f7a911693b352c6bd32e78cb356c650439e7a775f89f1"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "83cb56ec343f979910d4f29bcecd9bc9e7f37cddc2f6e73012d87c47eefb5f8f",
-  "sig": "9046faff7824f6fde4b7ca5ff6c01e702955fa4739d22a8fef07653a38b940826f577106b88f5325b4f5cf07f15a3cbb1c4e89b1310ae4bdf4d37f9d277f4a88"
+  "id": "c8357297035a25f89c1fb557342a879644cca9e966d262abcbe48e9873d99652",
+  "sig": "334c467c85b6ab4a9698ef913937efbdfe3ade5a233c47e3b801bb22b2cd1cfa3b58a7a5c48a6c53e0f44d0ad9b2ef962df81c7ea339dfa573816a8a6c2d1c54"
 }
