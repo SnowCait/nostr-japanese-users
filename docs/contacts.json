@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1706291431,
+  "created_at": 1706292855,
   "tags": [
     [
       "p",
@@ -2825,10 +2825,6 @@
     ],
     [
       "p",
-      "de74a97207060da0f03402d20e74b2be55ce772939db3c9d98170679190e3add"
-    ],
-    [
-      "p",
       "5b9c6e784b7a3d7ee3bf2702361cbe38458e8035df1725031f9b91aaead1e98a"
     ],
     [
@@ -3709,10 +3705,6 @@
     ],
     [
       "p",
-      "272cb7f685fb37d255f37458282c6e0a30d93e0e629b9751a00a1ea2ac84ef84"
-    ],
-    [
-      "p",
       "f1db5277b93bb79a3d6023f0c086c6562a46ffbfe4b43148bedcbef12a47e816"
     ],
     [
@@ -3822,10 +3814,6 @@
     [
       "p",
       "f96fbb3ddd4ba9c88794ae83e98450999d7a96777eedf8f59d0f316df20213f5"
-    ],
-    [
-      "p",
-      "6a08fd8f91306dddd63d57948800c4e45ce0e5b3a248f9d8e759b224422ebc72"
     ],
     [
       "p",
@@ -4522,9 +4510,17 @@
     [
       "p",
       "949ddaa102f29159698c6bb9fd432b456ad7da6d9c66cf813ab0e7c1aa04c4a7"
+    ],
+    [
+      "p",
+      "541dab17923afd2a9c61d6b1bb93487e7b75d24f8f107c800b3f1dc9d5f2d7c9"
+    ],
+    [
+      "p",
+      "816a2f808f5d146be1c11cb08122e379a291e72a0ed65068b448de25158e0f63"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "6b3e4950c7e2109978bb4d446df1c131c67600d0b099356dfd1314200ff25a29",
-  "sig": "1ba5cf70194419c26ef80c6d8d424e32bdd14ad9c1e0c7bd49e834d4bca382bb78f81810fafa03bc3b2ea2f067ad4388316cfebcaa7e5ef95c43fece0a1d3570"
+  "id": "93a116b5645bfcf2f14b9e7763cb58d2b755ace762f7e60f2b82e62a26b69cd9",
+  "sig": "54d60ea57ce6658e6a13efbaea817ebd6f7944cd3f28220b8c556b8c5b9b55feb407348aca9b7c74145549cb8ce7406a174020faa7eb1e68d9bb547c5a18840a"
 }
