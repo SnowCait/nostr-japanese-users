@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1707657143,
+  "created_at": 1707657860,
   "tags": [
     [
       "p",
@@ -1342,10 +1342,6 @@
     [
       "p",
       "8412c16b6c01fadd224622ee57b1dd58d298b433a37328e50a8c2a2a0bc7739d"
-    ],
-    [
-      "p",
-      "0cb05e2faeb2925e0a3e84c022bddcf0a41d156669c09c6ffb9b444422f101a7"
     ],
     [
       "p",
@@ -3341,10 +3337,6 @@
     ],
     [
       "p",
-      "dcad59341dd635c7b81daf56086d206c29c82447e26207af3a21be84167b65d2"
-    ],
-    [
-      "p",
       "a49271f9123b37bd9d399f94a1dd360e68baa48a2ec29e6c2c3ce5593738e7cb"
     ],
     [
@@ -4081,10 +4073,6 @@
     ],
     [
       "p",
-      "bd69d603165ff7f9bd478c8095087b8218f955dd8730580cfa64252492d647cd"
-    ],
-    [
-      "p",
       "7be13d4499b165578156f581e933d33b33c0dd6a7817221edcc0466150756804"
     ],
     [
@@ -4094,9 +4082,17 @@
     [
       "p",
       "249fc9fc5143b720ec9cb1410f6f6b86adf11e98b7d30faf46bf2c7462d343b1"
+    ],
+    [
+      "p",
+      "e24ab1d3029053e807dca4a0cf2412d2ddee0128a3aba12149036b5d251d97a7"
+    ],
+    [
+      "p",
+      "e29906ad5fc1d8fedfc7776f98d140b5bb955a8e81a29e514bc4616ebb09db2a"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "c0380a0b87f67c710d0d0194c5d63cfe82f998b6b21f17cfd3ac12758844efcb",
-  "sig": "faf855d855dddebeed1cbc946fae04d2f2210a22b0c02871b94defc53c71d8f5de8e5b1305139b4ac1c980ea1aa3fcc48a308587d061ca6b3e518578c7cd6c11"
+  "id": "438f771412b0e5f1fd9a15f732e7157991df27c6aa0408ac891d191509be685d",
+  "sig": "38a83072a337ad93d94b021e4503f7b4bd83a602e7f8913031b7029f6e61f58cc93637a2246670d09897701ade5fe84f0545fe9b122286a98d963960bfa305e3"
 }
