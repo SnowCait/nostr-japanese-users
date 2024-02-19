@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1708315661,
+  "created_at": 1708317851,
   "tags": [
     [
       "p",
@@ -1525,10 +1525,6 @@
     ],
     [
       "p",
-      "824b4a7ca9c94b51f4dab4f6416f37a0fd9a299cc27a0438096843e38105fe66"
-    ],
-    [
-      "p",
       "9f0205d8b50fa6d95cc53ad5e2d142d7b58065ee129f9773845b1a9e099015fe"
     ],
     [
@@ -1606,10 +1602,6 @@
     [
       "p",
       "5374e7e97b30a2b6fc0d2f74234b66f31c4b23cd2e26767a76fab06cd190e7d9"
-    ],
-    [
-      "p",
-      "5c1becf68fdd277c509ede321f9819cd0687ecab66b3af755d2b551738e1411c"
     ],
     [
       "p",
@@ -2073,10 +2065,6 @@
     ],
     [
       "p",
-      "c5e177acbc00ba82f172f11c2c9f8531ce088dca0a03366cbe1690d229579493"
-    ],
-    [
-      "p",
       "2694ddcc73c6391c5a3f1d0867c5737e918fdf5bb70560791a17f90e5d5b052e"
     ],
     [
@@ -2214,14 +2202,6 @@
     [
       "p",
       "8f6fd092c28bc173507338e52d8657d0546fd939fdfbfac77c3d353140fa9400"
-    ],
-    [
-      "p",
-      "3d3177a086627249659aa2b3f9d2624ebe41fb45d394d4cf95c7307a0a88a726"
-    ],
-    [
-      "p",
-      "439add05f587b535ac64a9f7d8a7b290fa870f6bb14e52569638b8dd31f61e5d"
     ],
     [
       "p",
@@ -2522,10 +2502,6 @@
     [
       "p",
       "f1e84c20355294c9ed752cd3993964ef056d65d74ea3b4a0572c4ec1f9ffcbef"
-    ],
-    [
-      "p",
-      "4acfbdd8f93171cf672c58707d4efcdc92ec5fcec00ba076c3be2968204f549e"
     ],
     [
       "p",
@@ -3305,10 +3281,6 @@
     ],
     [
       "p",
-      "f14cb86cb52e5ac222e4f1c9984c87649047a8af35ba93d3bfb5e6b955f276ea"
-    ],
-    [
-      "p",
       "2e45607238b2db110aa53b91c190544a46d6ca04a0e9b98636bcfec558ebf702"
     ],
     [
@@ -3437,10 +3409,6 @@
     ],
     [
       "p",
-      "d6c1ec29f6569edaf54f594159d370d839bc9e2b5c1660ede71fff0791b99d5d"
-    ],
-    [
-      "p",
       "447bad587c3b12aa8716bc009a7bdaf9cac5ea147d638416acfaeaab56c30fc9"
     ],
     [
@@ -3470,10 +3438,6 @@
     [
       "p",
       "f1db5277b93bb79a3d6023f0c086c6562a46ffbfe4b43148bedcbef12a47e816"
-    ],
-    [
-      "p",
-      "d391de9bf616d575d677aba41453d00c810403385356def3cf64d6639b5af038"
     ],
     [
       "p",
@@ -3546,10 +3510,6 @@
     [
       "p",
       "54c67ebf0272fe41e8aaba0be6d0889d4f8ecb9430713065ba71cf14363a2963"
-    ],
-    [
-      "p",
-      "eefb3ec27d486efcbf1174564c288213c4a791803213c10d93a1b9c6b9606723"
     ],
     [
       "p",
@@ -3846,9 +3806,41 @@
     [
       "p",
       "4284547034a9a6a7969d2a43baa1daf6217051751b3c24b3aed462021f5c755b"
+    ],
+    [
+      "p",
+      "08efa5e2a5e2afd5dd60bb4a19a737ac764e3bca5e57627b5ab9193ab27ebb30"
+    ],
+    [
+      "p",
+      "2473536a6e2fd20bde6d6b2df4231649b64b66b53d80b8608780462475b05ec0"
+    ],
+    [
+      "p",
+      "dcad59341dd635c7b81daf56086d206c29c82447e26207af3a21be84167b65d2"
+    ],
+    [
+      "p",
+      "c5e177acbc00ba82f172f11c2c9f8531ce088dca0a03366cbe1690d229579493"
+    ],
+    [
+      "p",
+      "4acfbdd8f93171cf672c58707d4efcdc92ec5fcec00ba076c3be2968204f549e"
+    ],
+    [
+      "p",
+      "3d3177a086627249659aa2b3f9d2624ebe41fb45d394d4cf95c7307a0a88a726"
+    ],
+    [
+      "p",
+      "eefb3ec27d486efcbf1174564c288213c4a791803213c10d93a1b9c6b9606723"
+    ],
+    [
+      "p",
+      "d6c1ec29f6569edaf54f594159d370d839bc9e2b5c1660ede71fff0791b99d5d"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "4757098f3035e620f9ca290f0020e0a7ff711ed4456f84b04ed59918ad28bd73",
-  "sig": "a4e38c8424b479f75b4d650720f3de09ff04584908011e54ae88996ee9cd0c4f2ebe968706923bf416125c8ac660b5ae82ef5d3af88a3c878f535ae475055d0f"
+  "id": "5c0ab8291a1d5cbec557118a3d153f98a3a864e012041df7440ddf011a4a98b0",
+  "sig": "e1f7a9cac6d05397ef2e1a6f8b9fb94be5096e33cd1dcfc892c2f9de07c50b42ff7f57c3322a78ac929977aaa44b2d341a0e2db75a7e1facba98c17677a219a1"
 }
