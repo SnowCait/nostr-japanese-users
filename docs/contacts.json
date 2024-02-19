@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1708351924,
+  "created_at": 1708352881,
   "tags": [
     [
       "p",
@@ -2093,10 +2093,6 @@
     ],
     [
       "p",
-      "c7d6c0190fe4bf32f9c36a4dac62fbcb25d7c8b7b39a7784bf2fe2c8caea65e9"
-    ],
-    [
-      "p",
       "b75fe3753de23fd79485ef913677e48a5e523f4a7b9bd49fe0f43294e6a3bc3f"
     ],
     [
@@ -3061,10 +3057,6 @@
     ],
     [
       "p",
-      "f0c6e61385ea22bd7a31e62bc16c00a6e27d732380106f65dad01e0979a5db22"
-    ],
-    [
-      "p",
       "6c0672e56c38b49fdd167896ace3cd30005c4fbaf266154f5c4030805e6c84c8"
     ],
     [
@@ -3285,10 +3277,6 @@
     ],
     [
       "p",
-      "c57e3fbcc58212516e446209ad0ed2b6f625e5a057809e244f346c3f772db119"
-    ],
-    [
-      "p",
       "ca87cac008e3c02cce4098a8da8444ab834629783f2d12b7acfd13e1f9a34140"
     ],
     [
@@ -3398,10 +3386,6 @@
     [
       "p",
       "76d5e7e16ad7aebfb8f87a7254516ecd57b2243e259a44793616b831cd191098"
-    ],
-    [
-      "p",
-      "ed99b83c99469cd09c96a0e3efc0cd8c688a28b21e8b35f81c041ff1abab5f50"
     ],
     [
       "p",
@@ -3842,9 +3826,13 @@
     [
       "p",
       "1a016c5aa12c1e91bfa779e5f0d9c23f75e5f517c9060c5db9d433bf1e203be7"
+    ],
+    [
+      "p",
+      "3415211216325781a1a7645b2e7697008074b551a0f07c1d8f678131b911e296"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "d0a6d4efb13c753f6327298333bc60cfb95d4a5f212b8a337f83142a85b4aa90",
-  "sig": "37a7421f16c81a862db576c6d90043273e1df189c6daa778032f303240a76b3ee18906dbc3f02c0fb064d9ba37918e19f4d3362d19b597976279fb3527f3e2fe"
+  "id": "a8115ad3622bf3fcd2436c5940d52572a6f6cb0684a88ef178ad19e7e4095688",
+  "sig": "51fed1863c4c3a0067b1b8db616f3cd2a0e69f8341dc2e49f861aaa923b9e6faff2cbc6bb467a7a6700ab9fb8e35f3c02f5d81fce6d51d8bd6f0c6525a0de4a0"
 }
