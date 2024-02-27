@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1709061019,
+  "created_at": 1709061627,
   "tags": [
     [
       "p",
@@ -1509,10 +1509,6 @@
     ],
     [
       "p",
-      "e667831a5bae6533cc61891346aa9663f03bb20083e3545f428269e4bcd1142a"
-    ],
-    [
-      "p",
       "c97de05524741ce6b3b7bb986b3ec15a1ffcb23d3a161e744c6b5205292a91d4"
     ],
     [
@@ -1817,10 +1813,6 @@
     ],
     [
       "p",
-      "15b81842e7c640e0d189c57e4fc4b487b7032ea3b3feb1bfb2e9c5f79256be90"
-    ],
-    [
-      "p",
       "6e158804e7e2f1acf578129e882dc113e8b011d7e98c7c3c6c119dd6af370980"
     ],
     [
@@ -1874,10 +1866,6 @@
     [
       "p",
       "b8d0e9250d1ffbfca5e8c904fe80bb0f130a9e11fe8ed8909c966d78d2e34db5"
-    ],
-    [
-      "p",
-      "bd53511016c31af61820b80c434e4baea956cf91fb1ffa2c0c9c0a2c8e8de3a2"
     ],
     [
       "p",
@@ -2066,10 +2054,6 @@
     [
       "p",
       "ff6af774ef06d8820599be989c67f07cea34d1cda46d27c658322405a9f87eb0"
-    ],
-    [
-      "p",
-      "416194141dee05d741125a281fc245b3b0ad0d1f236a3713feb36e49f41b5aa3"
     ],
     [
       "p",
@@ -2793,10 +2777,6 @@
     ],
     [
       "p",
-      "289b76ceb53883d59befdb315ea773114e8f6b5342e8b9cd49c0772802b5308b"
-    ],
-    [
-      "p",
       "13c9616be1890e394a6bcce707e72f53f4a4292f9d29ca95d5a99b9dba346603"
     ],
     [
@@ -3010,10 +2990,6 @@
     [
       "p",
       "1057080a9959cd31979126f2f229b66f94a5d07b44ea42019d0ed7a31d6bae77"
-    ],
-    [
-      "p",
-      "0da111d02155378b3a04d833b90668e0468e06cdbfc790d6a31bde79b19732da"
     ],
     [
       "p",
@@ -3249,10 +3225,6 @@
     ],
     [
       "p",
-      "74ea1fdbc33046433fce9ab5477d80e7ee8ed2b7e1accfb773a460d1294c7345"
-    ],
-    [
-      "p",
       "c0653309bc45a951addceb7488bb51ed33909e26d6f412053a65895c12ead78f"
     ],
     [
@@ -3417,10 +3389,6 @@
     ],
     [
       "p",
-      "95dc9affb0e0f105d644ec8b8e219e9ffa6e35f55bbab1876e83a415db607476"
-    ],
-    [
-      "p",
       "ccc3e370a200ab7c2cad6308fcca7fe86dcf2fcee6e9dec1235afc9975d57bf2"
     ],
     [
@@ -3494,10 +3462,6 @@
     [
       "p",
       "b3c22333d4b4a9af4067f610992fd6793c56d21ab88cdae72bc28fd47834f03c"
-    ],
-    [
-      "p",
-      "5d9051404041c2fe2dac81ed17a611743ddc978be5521cdbd81e7420b907a08d"
     ],
     [
       "p",
@@ -3734,9 +3698,41 @@
     [
       "p",
       "6553dc295089bb37febed0843e66dd391a4c17c65bb5886dbd20142781164dac"
+    ],
+    [
+      "p",
+      "cf62e754166b171057ce690c97b6b5d56219efc0d96f8eb08d5bc08c810c1c46"
+    ],
+    [
+      "p",
+      "3428c9e36ec50e2e4e3cd54a01e27252cd47fb60ae318440b64dc4dce568ff64"
+    ],
+    [
+      "p",
+      "c1ab385de20dd11b00c2409c2b44761c2920c0e439137f5a1354a213d2bacb3e"
+    ],
+    [
+      "p",
+      "7bdef7bdefa3a9fe7e3b1e8892f2d2410a4cffc6ca0a4c28822870d98e5ce012"
+    ],
+    [
+      "p",
+      "6a08fd8f91306dddd63d57948800c4e45ce0e5b3a248f9d8e759b224422ebc72"
+    ],
+    [
+      "p",
+      "cb8ea19233eed8c858b185f962ffa9aef8ee98ea46d30e0a7c9defe01c4cbaa9"
+    ],
+    [
+      "p",
+      "06d333dcfe659f2f8cd5adc76e943fe74ea2631514866ab2bce0ae94534d77a1"
+    ],
+    [
+      "p",
+      "bce46d9108766618a0277ca71f5815af194b2ec7b64f7fe1f7af36d8053772e7"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "c722e6cc23d7978e6c8982c347e4b4eb25756341f3656de1435145740c03d012",
-  "sig": "fbf8b29c3ea22a26df4c1496ad197c26ab557d90d31f46ad7681f0ab207990644e3df7857cd027bb54cac29cf9941b1aebe9f4b91a960d52763a2dc6ac5a75d1"
+  "id": "b62d37d4afabb2cc340ede659bbcf24660fb351d9a60b332d989bd85659bceb7",
+  "sig": "4051e23a84779a51e94381ebe38f27fea62414706ec0402af3c1d28251e90ea6d05b477390f0022bda8b4d3b1b8f3617bcf9135fb3a47fb55cfc233aa03aaaa7"
 }
