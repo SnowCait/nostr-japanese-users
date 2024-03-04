@@ -1,7 +1,7 @@
 {
   "kind": 3,
   "pubkey": "087c51f1926f8d3cb4ff45f53a8ee2a8511cfe113527ab0e87f9c5821201a61e",
-  "created_at": 1709563827,
+  "created_at": 1709567014,
   "tags": [
     [
       "p",
@@ -1781,10 +1781,6 @@
     ],
     [
       "p",
-      "6acc8ae8a1a7ed35471d17c347e5358b7fd46658142f40dbd8d6e21f957d0539"
-    ],
-    [
-      "p",
       "0726c94c7c2b60aac7660dedbb51f5a53ccf5e7c858c7adca6501f82a899288e"
     ],
     [
@@ -1849,10 +1845,6 @@
     ],
     [
       "p",
-      "77145e42eb8ed6508e9fcd214a8084c8d7eae26afabbcd3757ce2b8df958fe8d"
-    ],
-    [
-      "p",
       "9a3b39e013a8fa1018a6b341c28b178d3c292231d2c23288fdf3e2936664e7ab"
     ],
     [
@@ -1906,10 +1898,6 @@
     [
       "p",
       "7fe01279c7a8ba5a3cd8cebdc720f271a1470b6776f7f4e0dbd276597489feff"
-    ],
-    [
-      "p",
-      "0406ffc5276c23f510406db2d79d1499d61c683a819e280e1ab77c61fd53fd5c"
     ],
     [
       "p",
@@ -2010,10 +1998,6 @@
     [
       "p",
       "3ddabddfef37f5e20554d63ac03d3070d97d7658955ca97667232f457b7fb7db"
-    ],
-    [
-      "p",
-      "b91665c0061b2ab8e4812bd8976bb0e05e8f6439ef654baf2046f1b63fcdd0e0"
     ],
     [
       "p",
@@ -2485,10 +2469,6 @@
     ],
     [
       "p",
-      "13c9616be1890e394a6bcce707e72f53f4a4292f9d29ca95d5a99b9dba346603"
-    ],
-    [
-      "p",
       "f6a1cf67f091271356ae596dfe02fa3184de9394dd49448186e727434e3845ff"
     ],
     [
@@ -2658,10 +2638,6 @@
     [
       "p",
       "511675e87c4b794e5ab8c8ddd459e3a004522239dc175367f1db0e1b91a16b1e"
-    ],
-    [
-      "p",
-      "8faaa1063b85e89be748f28147265cf89c4ddddb30ff1c28233640a865902b17"
     ],
     [
       "p",
@@ -2977,10 +2953,6 @@
     ],
     [
       "p",
-      "681fd1284c934113b98c8e68d428a60fc0db75a8af19d9868312ac7f7d0c80d8"
-    ],
-    [
-      "p",
       "3c181274393a439303c51d233d7eed55cbcc14b64d8c87480e3dd66dcc8148ce"
     ],
     [
@@ -3134,10 +3106,6 @@
     [
       "p",
       "8a577efe530930ff1cd59057458b1b0e85876ee9295c5305e6948a41dfe9e6c9"
-    ],
-    [
-      "p",
-      "e212446b2aefaff4c832ca99e52b5ae276b7df01d039546a6dbd6167e8628139"
     ],
     [
       "p",
@@ -3517,10 +3485,6 @@
     ],
     [
       "p",
-      "2d2c1d8073e04eddcb400abdf4d4818cd884298eaf232dbf78b0ff14045ddd5d"
-    ],
-    [
-      "p",
       "289b76ceb53883d59befdb315ea773114e8f6b5342e8b9cd49c0772802b5308b"
     ],
     [
@@ -3790,9 +3754,49 @@
     [
       "p",
       "72a997a5f37278af7db0f26fd5e27f46327ac6a898ba6a6d7fe7ab7a9b6b64a1"
+    ],
+    [
+      "p",
+      "c9a58ba53c4287c4939ed71a7e31cb21bd13d2ff4bbbcc985455f25a7a20e636"
+    ],
+    [
+      "p",
+      "144b955a339cb41ed7d83f4fcf44ac87f57b6471e3fac8ebdfd7491428416e1e"
+    ],
+    [
+      "p",
+      "71963cd8e81c8e3838908055dc07d4469ec77538444d8d97e5e7b87282428bb2"
+    ],
+    [
+      "p",
+      "3aa4d6f5c3989c8b51e5d4e9fc544da5a715d7a76b91d60f45b1198749b393ed"
+    ],
+    [
+      "p",
+      "56262237ee3381db142dafda56524287f53f86209fa5d717f2f1605e1f386355"
+    ],
+    [
+      "p",
+      "13c9616be1890e394a6bcce707e72f53f4a4292f9d29ca95d5a99b9dba346603"
+    ],
+    [
+      "p",
+      "0406ffc5276c23f510406db2d79d1499d61c683a819e280e1ab77c61fd53fd5c"
+    ],
+    [
+      "p",
+      "2d2c1d8073e04eddcb400abdf4d4818cd884298eaf232dbf78b0ff14045ddd5d"
+    ],
+    [
+      "p",
+      "77145e42eb8ed6508e9fcd214a8084c8d7eae26afabbcd3757ce2b8df958fe8d"
+    ],
+    [
+      "p",
+      "6acc8ae8a1a7ed35471d17c347e5358b7fd46658142f40dbd8d6e21f957d0539"
     ]
   ],
   "content": "{\"wss://relay.snort.social/\":{\"read\":true,\"write\":true},\"wss://nostr.wine/\":{\"read\":true,\"write\":false},\"wss://nos.lol/\":{\"read\":true,\"write\":true},\"wss://relay.nostr.band/\":{\"write\":true,\"read\":true},\"wss://relay.damus.io/\":{\"write\":true,\"read\":true},\"wss://relay.nostr.wirednet.jp/\":{\"write\":true,\"read\":true}}",
-  "id": "8651651d37076cb0146855f6bccc0b3332796b9187c8b716c0d6cfad4d884f73",
-  "sig": "639f090790d805f48667a2e6158a1c09052b65962e30fef3d3469b560f4356732a0604209b1ed257574cd612fb9a8621a059984e53691e428295fc9b171b013c"
+  "id": "77cd2bf3042d55bde2dd26b7251109d52aa2c6620ddbcaf99e41fe27f0c6b6fb",
+  "sig": "53f4933358fd248368f3b1368700d267ec2060c95bf8e8c636249ab96017534f85100483b193696a1efef36a738f245d70d42ed92bbcc7de4465ff6518ea3dc3"
 }
