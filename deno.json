@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "follow": "deno run --allow-env --allow-net --allow-read --allow-write tasks/follow.ts",
+    "unfollow": "deno run --allow-env --allow-net --allow-read --allow-write tasks/unfollow.ts",
+    "send": "deno run --allow-env --allow-net --allow-read tasks/send.ts"
+  },
+  "lint": {
+    "include": ["libs", "tasks"]
+  },
+  "fmt": {
+    "include": ["libs", "tasks"]
+  }
+}
