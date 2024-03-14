@@ -1,10 +1,12 @@
 # Nostr Japanese users
 
-Follow Japanese users.
+Follow Japanese users. Working on GitHub Actions.
+
+日本人をフォローする bot です。 GitHub Actions で動いています。
 
 ## Development
 
-Install Node.js 18.
+Install [Deno](https://docs.deno.com/runtime/manual/).
 
 Set environment variable `NOSTR_PRIVATE_KEY` (nsec or hex) or save as `.env`.
 
@@ -12,8 +14,10 @@ Set environment variable `NOSTR_PRIVATE_KEY` (nsec or hex) or save as `.env`.
 NOSTR_PRIVATE_KEY=nsec1yourprivatekey
 ```
 
-Run `main.js`.
+## Run
 
 ```bash
-node main.js
+deno task follow
+deno task unfollow
+deno task send
 ```
