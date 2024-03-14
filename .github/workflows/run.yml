@@ -37,8 +37,12 @@ jobs:
           NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
       - uses: snow-actions/git-config-user@v1.0.0
       - name: Commit
+        id: commit
         run: |
           set -x
+          if ! git diff --exit-code --name-only docs/contacts.json; then
+            echo "updated=true" >> $GITHUB_OUTPUT
+          fi
           if ! git diff --exit-code docs/; then
             git add docs/
             git commit -m 'Update'
@@ -46,10 +50,8 @@ jobs:
           fi
       - name: Send to global relays
         run: |
-          set -x
-          if ! git diff --exit-code docs/contacts.json; then
-            deno task send
-          fi
+          deno task send
+        if: ${{ steps.commit.outputs.updated == 'true'}}
       - name: Send to Japanese relays
         run: |
           curl -X POST -u "${NOSTR_WEBHOOK_BASIC_AUTH}" -H "Content-Type: application/json" -d @docs/contacts.json https://nostr-webhook.compile-error.net/post
