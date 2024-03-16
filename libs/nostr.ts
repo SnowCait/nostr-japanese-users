@@ -28,12 +28,16 @@ export async function checkActive(
   }
   const notesIterator = fetcher.fetchLatestEventsPerAuthor(
     { authors: pubkeys, relayUrls },
-    { kinds: [eventKind.text] },
-    10,
+    { kinds: [eventKind.metadata, eventKind.text] },
+    20,
+    { connectTimeoutMs: 2000, abortSignal: AbortSignal.timeout(10000) },
   );
   for await (const { author, events } of notesIterator) {
     if (
       events.filter((event) =>
+        (event.kind === eventKind.metadata ||
+          event.tags.filter(([tagName]) => ["p", "t", "r"].includes(tagName))
+              .length === 0) &&
         event.created_at >
           Math.floor(Date.now() / 1000 - activeDays * 24 * 60 * 60) &&
         !isProxy(event.tags) && includesJapanese(event.content)
