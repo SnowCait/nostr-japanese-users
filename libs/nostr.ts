@@ -30,7 +30,6 @@ export async function checkActive(
     { authors: pubkeys, relayUrls },
     { kinds: [eventKind.metadata, eventKind.text] },
     20,
-    { connectTimeoutMs: 2000, abortSignal: AbortSignal.timeout(10000) },
   );
   for await (const { author, events } of notesIterator) {
     if (
