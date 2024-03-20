@@ -1,4 +1,4 @@
-import { eventKind, NostrFetcher } from "npm:nostr-fetch@0.15.0";
+import { eventKind, NostrFetcher } from "nostr-fetch";
 import {
   contactsJsonPath,
   readEventJson,

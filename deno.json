@@ -9,5 +9,8 @@
   },
   "fmt": {
     "include": ["libs", "tasks"]
+  },
+  "imports": {
+    "nostr-fetch": "npm:nostr-fetch@^0.15.1"
   }
 }

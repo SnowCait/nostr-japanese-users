@@ -1,4 +1,4 @@
-import { NostrEvent } from "npm:nostr-fetch@0.15.0";
+import { NostrEvent } from "nostr-fetch";
 import relays from "../relays.json" with { type: "json" };
 import { contactsJsonPath, readEventJson } from "../libs/helpers.ts";
 

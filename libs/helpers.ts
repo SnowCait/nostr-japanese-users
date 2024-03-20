@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { NostrEvent } from "npm:nostr-fetch@0.15.0";
+import { NostrEvent } from "nostr-fetch";
 import { finalizeEvent, nip19 } from "npm:nostr-tools@2.3.1";
 import { hexToBytes } from "npm:@noble/hashes@1.3.2/utils";
 import relays from "../relays.json" with { type: "json" };

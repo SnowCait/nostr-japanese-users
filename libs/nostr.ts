@@ -1,4 +1,4 @@
-import { eventKind, NostrEventExt, NostrFetcher } from "npm:nostr-fetch@0.15.0";
+import { eventKind, NostrEventExt, NostrFetcher } from "nostr-fetch";
 import { activeDays, includesJapanese, isProxy } from "./helpers.ts";
 
 export async function fetchJapaneseMetadataEvents(

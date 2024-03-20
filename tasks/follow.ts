@@ -1,5 +1,5 @@
 import { parseArgs } from "https://deno.land/std@0.219.0/cli/parse_args.ts";
-import { eventKind, NostrFetcher } from "npm:nostr-fetch@0.15.0";
+import { eventKind, NostrFetcher } from "nostr-fetch";
 import {
   contactsJsonPath,
   readEventJson,
