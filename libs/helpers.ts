@@ -50,3 +50,10 @@ export function isProxy(tags: string[][]): boolean {
 export function includesJapanese(content: string): boolean {
   return /[ぁ-ゔァ-ヺ]/u.test(content);
 }
+
+export function randomArray<T>(array: T[], count: number) {
+  return Array.from(
+    { length: count },
+    (_v, _k) => array[Math.floor(Math.random() * array.length)],
+  );
+}
