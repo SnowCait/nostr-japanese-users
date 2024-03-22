@@ -1,6 +1,7 @@
 import { eventKind, NostrFetcher } from "nostr-fetch";
 import {
   contactsJsonPath,
+  randomArray,
   readEventJson,
   relayUrls,
   sleepJsonPath,
@@ -11,10 +12,7 @@ import { checkActive } from "../libs/nostr.ts";
 const contacts = await readEventJson(contactsJsonPath);
 const followees = contacts.tags.map(([, pubkey]) => pubkey);
 
-const randomFollowees = Array.from(
-  { length: 10 },
-  (_v, _k) => followees[Math.floor(Math.random() * followees.length)],
-);
+const randomFollowees = randomArray(followees, 10);
 console.log("[followees]", followees.length, randomFollowees);
 
 const fetcher = NostrFetcher.init();
@@ -23,7 +21,7 @@ const pubkeysMap = await checkActive(fetcher, relayUrls, randomFollowees);
 const inactiveFollowees = [...pubkeysMap].filter(([, active]) => !active).map((
   [pubkey],
 ) => pubkey);
-console.log("[inactive]", inactiveFollowees.length, pubkeysMap);
+console.log("[inactive/proxy]", inactiveFollowees.length, pubkeysMap);
 
 fetcher.shutdown();
 
