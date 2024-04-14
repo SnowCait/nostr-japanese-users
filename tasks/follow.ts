@@ -7,21 +7,18 @@ import {
   sleepJsonPath,
   writeEventJson,
 } from "../libs/helpers.ts";
-import {
-  checkActive,
-  fetchJapaneseMetadataEvents,
-  manyReportedPubkeys,
-} from "../libs/nostr.ts";
+import { checkActive, fetchJapaneseMetadataEvents, manyReportedPubkeys } from "../libs/nostr.ts";
 
 const options: { since: string | number | undefined } = parseArgs(Deno.args);
 
 const contacts = await readEventJson(contactsJsonPath);
+const followees = contacts.tags.filter(([tagName]) => tagName === "p").map(([, pubkey]) => pubkey);
 const since = options.since === undefined
   ? contacts.created_at
   : Math.floor(new Date(options.since).getTime() / 1000);
 console.log(
   "[last followees]",
-  contacts.tags.length,
+  followees.length,
   new Date(since * 1000).toString(),
 );
 
@@ -34,13 +31,9 @@ const japanesMetadataEvents = await fetchJapaneseMetadataEvents(
 );
 const newPubkeys = [
   ...new Set(
-    japanesMetadataEvents.filter((event) =>
-      !contacts.tags.some(([tagName, pubkey]) =>
-        tagName === "p" && pubkey === event.pubkey
-      )
-    ).map(
-      (event) => event.pubkey,
-    ),
+    japanesMetadataEvents
+      .filter((event) => !followees.includes(event.pubkey))
+      .map((event) => event.pubkey),
   ),
 ];
 console.log(
@@ -55,9 +48,7 @@ const reportedPubkeys = await manyReportedPubkeys(
   relayUrls,
   newPubkeys,
 );
-const pubkeys = newPubkeys.filter((pubkey) =>
-  !reportedPubkeys.includes(pubkey)
-);
+const pubkeys = newPubkeys.filter((pubkey) => !reportedPubkeys.includes(pubkey));
 console.log("[japanese]", pubkeys.length, pubkeys);
 
 const pubkeysMap = await checkActive(fetcher, relayUrls, pubkeys);
@@ -73,6 +64,7 @@ console.log("[inactive/proxy japanese]", inactiveOrProxyPubkeys.length);
 fetcher.shutdown();
 
 if (addingPubkeys.length > 0) {
+  console.log("[new followees]", addingPubkeys.length, addingPubkeys);
   const tags = [
     ...contacts.tags,
     ...addingPubkeys.map((pubkey) => ["p", pubkey]),
@@ -83,19 +75,18 @@ if (addingPubkeys.length > 0) {
 
 if (inactiveOrProxyPubkeys.length > 0) {
   const sleep = await readEventJson(sleepJsonPath);
-  const addingSleeper = inactiveOrProxyPubkeys.filter((pubkey) =>
-    !sleep.tags.some(([tagName, p]) => tagName === "p" && pubkey === p)
-  );
+  const sleepers = sleep.tags.filter(([tagName]) => tagName === "p").map(([, pubkey]) => pubkey);
+  const addingSleepers = inactiveOrProxyPubkeys.filter((pubkey) => !sleepers.includes(pubkey));
   console.log(
-    "[sleep]",
-    addingSleeper.length,
+    "[add sleep]",
+    addingSleepers.length,
     inactiveOrProxyPubkeys.length,
-    addingSleeper,
+    addingSleepers,
   );
-  if (addingSleeper.length > 0) {
+  if (addingSleepers.length > 0) {
     const tags = [
       ...sleep.tags,
-      ...addingSleeper.map((pubkey) => ["p", pubkey]),
+      ...addingSleepers.map((pubkey) => ["p", pubkey]),
     ];
     console.log(
       "[sleepers]",
