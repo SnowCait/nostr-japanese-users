@@ -33,6 +33,7 @@ jobs:
         run: |
           deno task follow
           deno task unfollow
+          deno task prune
         env:
           NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
       - uses: snow-actions/git-config-user@v1.0.0
