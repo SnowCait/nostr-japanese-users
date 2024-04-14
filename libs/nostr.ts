@@ -1,5 +1,5 @@
 import { eventKind, NostrEventExt, NostrFetcher } from "nostr-fetch";
-import { activeDays, includesJapanese, isProxy } from "./helpers.ts";
+import { activeDays, includesJapanese, isNsfw, isProxy } from "./helpers.ts";
 
 export async function fetchJapaneseMetadataEvents(
   fetcher: NostrFetcher,
@@ -10,7 +10,7 @@ export async function fetchJapaneseMetadataEvents(
     kinds: [eventKind.metadata],
   }, { since });
   const japanesMetadataEvents = metadataEvents.filter((event) =>
-    !isProxy(event.tags) && includesJapanese(event.content)
+    !isProxy(event.tags) && !isNsfw(event.content) && includesJapanese(event.content)
   );
   return japanesMetadataEvents;
 }
@@ -26,22 +26,36 @@ export async function checkActive(
   if (pubkeys.length === 0) {
     return pubkeysMap;
   }
+
+  const since = Math.floor(Date.now() / 1000) - activeDays * 24 * 60 * 60;
   const notesIterator = fetcher.fetchLatestEventsPerAuthor(
     { authors: pubkeys, relayUrls },
     { kinds: [eventKind.metadata, eventKind.text] },
     20,
   );
   for await (const { author, events } of notesIterator) {
-    if (
-      events.filter((event) =>
-        (event.kind === eventKind.metadata ||
-          event.tags.filter(([tagName]) => ["p", "t", "r"].includes(tagName))
-              .length === 0) &&
-        event.created_at >
-          Math.floor(Date.now() / 1000 - activeDays * 24 * 60 * 60) &&
-        !isProxy(event.tags) && includesJapanese(event.content)
-      ).length > 0
-    ) {
+    const active = events.some((event) => {
+      if (event.kind === eventKind.metadata && isNsfw(event.content)) {
+        return false;
+      }
+
+      if (
+        event.kind === eventKind.text &&
+        event.tags.some(([tagName]) =>
+          ["p", "t", "r", "content-warning", "expiration"].includes(tagName)
+        )
+      ) {
+        return false;
+      }
+
+      if (event.created_at < since) {
+        return false;
+      }
+
+      return !isProxy(event.tags) && !isNsfw(event.content) && includesJapanese(event.content);
+    });
+
+    if (active) {
       pubkeysMap.set(author, true);
     }
   }
