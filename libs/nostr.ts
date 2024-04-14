@@ -79,3 +79,15 @@ export async function manyReportedPubkeys(
   console.log("[reported]", reportedPubkeys, manyReportedPubkeys);
   return manyReportedPubkeys;
 }
+
+export async function fetchFollowers(
+  fetcher: NostrFetcher,
+  relayUrls: string[],
+  pubkey: string,
+): Promise<string[]> {
+  const contactsEvents = await fetcher.fetchAllEvents(relayUrls, {
+    kinds: [eventKind.contacts],
+    "#p": [pubkey],
+  }, {});
+  return [...new Set(contactsEvents.map((event) => event.pubkey))];
+}

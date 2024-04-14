@@ -32,6 +32,7 @@ jobs:
       - name: Follow & Unfollow
         run: |
           deno task follow
+          deno task follow-followers
           deno task unfollow
           deno task prune
         env:
