@@ -62,10 +62,7 @@ export async function manyReportedPubkeys(
     "#p": pubkeys,
   }, {});
   const reportedPubkeys = reportingEvents.flatMap(
-    (event) =>
-      event.tags.filter(([tagName]) => tagName === "p").map(([, pubkey]) =>
-        pubkey
-      ),
+    (event) => event.tags.filter(([tagName]) => tagName === "p").map(([, pubkey]) => pubkey),
   ).reduce((map, p) => {
     const increment = 1;
     if (map.has(p)) {
