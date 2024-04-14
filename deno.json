@@ -8,6 +8,7 @@
     "include": ["libs", "tasks"]
   },
   "fmt": {
+    "lineWidth": 100,
     "include": ["libs", "tasks"]
   },
   "imports": {
