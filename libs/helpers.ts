@@ -51,6 +51,10 @@ export function includesJapanese(content: string): boolean {
   return /[ぁ-ゔァ-ヺ]/u.test(content);
 }
 
+export function isNsfw(content: string): boolean {
+  return /nsfw|🔞/ig.test(content);
+}
+
 export function randomArray<T>(array: T[], count: number) {
   return Array.from(
     { length: count },
