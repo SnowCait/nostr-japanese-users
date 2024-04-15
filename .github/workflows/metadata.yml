@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - id: metadata
         run: |
-          json=$(cat nostr-bot/metadata.json | jq -c)
+          json=$(cat metadata.json | jq -c)
           echo "json=${json}" >> "$GITHUB_OUTPUT"
       - id: relays
         run: |
