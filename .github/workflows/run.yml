@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.43.1
+          deno-version: v1.42.4
       - run: deno --version
       - uses: actions/checkout@v4
       - name: Follow & Unfollow
