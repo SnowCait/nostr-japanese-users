@@ -20,7 +20,7 @@ console.log("[sleepers]", sleepers.length);
 const fetcher = NostrFetcher.init();
 
 // Follow active sleepers
-const randomSleepers = randomArray(sleepers, 100);
+const randomSleepers = randomArray(sleepers, 10);
 const sleepersMap = await checkActive(fetcher, relayUrls, randomSleepers);
 const activeSleepers = [...sleepersMap]
   .filter(([, active]) => active)
