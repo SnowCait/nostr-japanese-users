@@ -18,6 +18,9 @@ NOSTR_PRIVATE_KEY=nsec1yourprivatekey
 
 ```bash
 deno task follow
+deno task follow-followers
+deno task follow-sleepers
 deno task unfollow
+deno task prune
 deno task send
 ```
