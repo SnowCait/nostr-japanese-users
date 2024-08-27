@@ -63,8 +63,9 @@ console.log("[inactive/proxy japanese]", inactiveOrProxyPubkeys.length);
 
 fetcher.shutdown();
 
+console.log("[new followees]", addingPubkeys.length, addingPubkeys);
+
 if (addingPubkeys.length > 0) {
-  console.log("[new followees]", addingPubkeys.length, addingPubkeys);
   const tags = [
     ...contacts.tags,
     ...addingPubkeys.map((pubkey) => ["p", pubkey]),
