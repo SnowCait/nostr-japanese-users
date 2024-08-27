@@ -47,6 +47,12 @@ export function isProxy(tags: string[][]): boolean {
   return tags.some(([tagName]) => tagName === "proxy" || tagName === "mostr");
 }
 
+export function isAnonymousClient(tags: string[][]): boolean {
+  return tags.some(([tagName, tagContent]) =>
+    tagName === "client" && ["nchan.shino3.net"].includes(tagContent)
+  );
+}
+
 export function includesJapanese(content: string): boolean {
   return /[ぁ-ゔァ-ヺ]/u.test(content);
 }

@@ -1,5 +1,5 @@
 import { eventKind, NostrEventExt, NostrFetcher } from "nostr-fetch";
-import { activeDays, includesJapanese, isNsfw, isProxy } from "./helpers.ts";
+import { activeDays, includesJapanese, isAnonymousClient, isNsfw, isProxy } from "./helpers.ts";
 
 export async function fetchJapaneseMetadataEvents(
   fetcher: NostrFetcher,
@@ -10,7 +10,8 @@ export async function fetchJapaneseMetadataEvents(
     kinds: [eventKind.metadata],
   }, { since });
   const japanesMetadataEvents = metadataEvents.filter((event) =>
-    !isProxy(event.tags) && !isNsfw(event.content) && includesJapanese(event.content)
+    !isProxy(event.tags) && !isAnonymousClient(event.tags) && !isNsfw(event.content) &&
+    includesJapanese(event.content)
   );
   return japanesMetadataEvents;
 }
@@ -52,7 +53,8 @@ export async function checkActive(
         return false;
       }
 
-      return !isProxy(event.tags) && !isNsfw(event.content) && includesJapanese(event.content);
+      return !isProxy(event.tags) && !isAnonymousClient(event.tags) && !isNsfw(event.content) &&
+        includesJapanese(event.content);
     });
 
     if (active) {
