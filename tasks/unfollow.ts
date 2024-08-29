@@ -12,7 +12,7 @@ import { checkActive } from "../libs/nostr.ts";
 const contacts = await readEventJson(contactsJsonPath);
 const followees = contacts.tags.map(([, pubkey]) => pubkey);
 
-const randomFollowees = randomArray(followees, 10);
+const randomFollowees = randomArray(followees, 20);
 console.log("[followees]", followees.length, randomFollowees);
 
 const fetcher = NostrFetcher.init();
