@@ -1,4 +1,4 @@
-import dotenv from "dotenv";
+import dotenv from "npm:dotenv";
 import { NostrEvent } from "nostr-fetch";
 import { finalizeEvent, nip19 } from "npm:nostr-tools@2.3.1";
 import { hexToBytes } from "npm:@noble/hashes@1.3.2/utils";
