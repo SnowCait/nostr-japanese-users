@@ -16,11 +16,18 @@ NOSTR_PRIVATE_KEY=nsec1yourprivatekey
 
 ## Run
 
+These commands run locally.
+
 ```bash
 deno task follow
 deno task follow-followers
 deno task follow-sleepers
 deno task unfollow
 deno task prune
+```
+
+If you want to send kind 3 event to relays.
+
+```bash
 deno task send
 ```
