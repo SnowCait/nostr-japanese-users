@@ -110,11 +110,12 @@ export async function fetchFollowers(
 
 export async function send(relayUrl: string, event: NostrEvent): Promise<void> {
   await new Promise((resolve, reject) => {
+    const ws = new WebSocket(relayUrl);
     const timeoutId = setTimeout(() => {
       console.log("[timeout]", relayUrl);
+      ws.close();
       reject();
     }, 3000);
-    const ws = new WebSocket(relayUrl);
     ws.addEventListener("open", () => {
       ws.send(JSON.stringify(["EVENT", event]));
     });
