@@ -5,4 +5,7 @@ import { send } from "../libs/nostr.ts";
 const contacts = await readEventJson(contactsJsonPath);
 console.log(contacts.tags.length, relays);
 
-await Promise.allSettled(relays.map((relay) => send(relay, contacts)));
+const results = await Promise.allSettled(relays.map((relay) => send(relay, contacts)));
+if (!results.some(({ status }) => status === "fulfilled")) {
+  Deno.exit(1);
+}
