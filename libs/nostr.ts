@@ -1,4 +1,4 @@
-import { eventKind, NostrEventExt, NostrFetcher } from "nostr-fetch";
+import { eventKind, NostrEvent, NostrEventExt, NostrFetcher } from "nostr-fetch";
 import { activeDays, includesJapanese, isAnonymousClient, isNsfw, isProxy } from "./helpers.ts";
 
 export async function fetchJapaneseMetadataEvents(
@@ -106,4 +106,35 @@ export async function fetchFollowers(
     "#p": [pubkey],
   }, {});
   return [...new Set(contactsEvents.map((event) => event.pubkey))];
+}
+
+export async function send(relayUrl: string, event: NostrEvent): Promise<void> {
+  await new Promise((resolve, reject) => {
+    const ws = new WebSocket(relayUrl);
+    const timeoutId = setTimeout(() => {
+      console.log("[timeout]", relayUrl);
+      ws.close();
+      reject();
+    }, 3000);
+    ws.addEventListener("open", () => {
+      ws.send(JSON.stringify(["EVENT", event]));
+    });
+    ws.addEventListener("message", (e) => {
+      console.log("[message]", relayUrl, e.data);
+      const [, , ok, reason] = JSON.parse(e.data);
+      ws.close();
+      clearTimeout(timeoutId);
+      if (ok) {
+        resolve(e.data);
+      } else {
+        reject(reason);
+      }
+    });
+    ws.addEventListener("error", (e) => {
+      console.error("[error]", e);
+      ws.close();
+      clearTimeout(timeoutId);
+      reject(e);
+    });
+  });
 }
