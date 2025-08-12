@@ -28,7 +28,7 @@ jobs:
         with:
           deno-version: v1.42.4
       - run: deno --version
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Follow & Unfollow
         run: |
           deno task follow
