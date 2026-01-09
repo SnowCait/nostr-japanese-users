@@ -28,7 +28,7 @@ jobs:
           echo "data<<EOF" >> "$GITHUB_OUTPUT"
           cat relays.json | jq -c -r '.[]' >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
-      - uses: snow-actions/nostr@v1.8.2
+      - uses: snow-actions/nostr@v1.8.3
         with:
           kind: 0
           content: ${{ steps.metadata.outputs.json }}
